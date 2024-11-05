@@ -25,17 +25,23 @@ function showDescription(descId) {
     const selectedDesc = document.getElementById(descId);
     selectedDesc.classList.add('show'); // Show the selected description
 
-    // Position the description box next to the hovered timeline item
-    const timelineItem = event.currentTarget;
+    // Move the education section to the left
+    const educationSection = document.getElementById(' education');
+    educationSection.style.transform = 'translateX(-200px)'; // Move left by 200px
+
     const descriptionBox = document.querySelector('.description');
     descriptionBox.style.display = 'block'; // Show the description box
-    descriptionBox.style.top = `${timelineItem.getBoundingClientRect().top}px`; // Align with the top of the item
-    descriptionBox.style.left = `${timelineItem.getBoundingClientRect().right + 10}px`; // Position to the right of the item
 }
 
-function hideDescription(descId) {
-    const selectedDesc = document.getElementById(descId);
-    selectedDesc.classList.remove('show'); // Hide the selected description
+function hideDescription() {
+    const descriptions = document.querySelectorAll('.description p');
+    descriptions.forEach(desc => {
+        desc.classList.remove('show'); // Hide all descriptions
+    });
+
+    const educationSection = document.getElementById('education');
+    educationSection.style.transform = 'translateX(0)'; // Reset position
+
     const descriptionBox = document.querySelector('.description');
     descriptionBox.style.display = 'none'; // Hide the description box
 }

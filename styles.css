@@ -132,20 +132,16 @@ html {
 
 
 section {
+    background-color: white;
     padding: 50px 20px; /* Padding for sections */
     height: auto; /* Adjust height automatically */
 }
 
 #about {
-    text-align: center; /* Center text */
-    padding: 50px 20px; /* Add padding for spacing */
-    margin: 0; /* Remove any default margin */
-    background-color: transparent; /* Ensure no background color */
-    max-width: 400px;
-    margin: 20px auto;
-    font-size: 16px;
-    line-height: 1.5;
+    padding: 50px 20px; /* Add padding */
+    text-align: center; /* Center the text */
 }
+
 
 #education {
     text-align: center;
