@@ -2,6 +2,8 @@ body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #7f00ff, #e100ff);
     color: #fff;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .navbar {
@@ -9,6 +11,10 @@ body {
     justify-content: space-between;
     padding: 15px 30px;
     background-color: #2d2d2d;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 .nav-links {
@@ -30,9 +36,12 @@ body {
 
 .hero-section {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding: 50px 30px;
+    text-align: center;
+    padding: 100px 30px 50px;
+    height: 100vh;
 }
 
 .hero-text h1 {
@@ -40,8 +49,12 @@ body {
 }
 
 .typing-text {
+    display: inline-block;
     border-right: 2px solid #fff;
     animation: typing 3s steps(10, end), blink 0.75s step-end infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
 }
 
 @keyframes typing {
@@ -55,11 +68,18 @@ body {
 }
 
 .section {
-    padding: 50px 30px;
+    padding: 100px 30px;
+    margin-top: 60px;
 }
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 2rem;
+.project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.project-item {
+    padding: 15px;
+    background-color: #444;
+    border-radius: 8px;
 }
