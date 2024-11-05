@@ -2,81 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content='IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio of Maria Pushparaj</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel='stylesheet'>
+    <title>Portfolio</title>
+    <!-- Link to Boxicons -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar">
-            <div class="logo">Portfolio</div>
-            <ul class="nav-links">
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#papers">Papers</a></li>
-                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
-            <i class='bx bx-moon toggle-icon'></i>
+                <li><a href="#theme"><i class='bx bx-moon'></i></a></li>
             </ul>
         </nav>
-    </header>
-
-    <section id="hero" class="hero-section">
-        <div class="hero-content">
-            <h1 class="animate__animated animate__fadeInDown">Hello, I am <span class="typing-text" id="typing-text">Maria</span></h1>
-            <p class="animate__animated animate__fadeIn">Aspiring Engineer and Developer focused on AI and Machine Learning</p>
-            <div class="social-icons animate__animated animate__fadeIn">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-github"></i></a>
+        
+        <section class="hero">
+            <h2>Hello, I am</h2>
+            <h1>Lucas Franklin</h1>
+            <h3>Web Developer</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem, cupiditate illum dolores sed eum perspiciatis tempora.</p>
+            <div class="social-icons">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-linkedin'></i></a>
             </div>
-            <button class="cv-btn animate__animated animate__fadeIn">Download CV</button>
+            <button class="download-btn">Download CV</button>
+        </section>
+
+        <div class="profile-image">
+            <img src="your-image.jpg" alt="Lucas Franklin">
         </div>
-    </section>
-
-    <section id="about" class="section animate__animated animate__fadeInUp">
-        <h2 class="highlight">About</h2>
-        <p>I am Judy U, currently pursuing my Master's in Artificial Intelligence. I am passionate about developing innovative machine learning solutions for real-world problems, especially in the field of acoustic devices and advanced data analysis.</p>
-    </section>
-
-    <section id="skills" class="section animate__animated animate__zoomIn">
-        <h2 class="highlight">Skills</h2>
-        <ul>
-            <li>Programming: Python, C++, MATLAB</li>
-            <li>Frameworks: PyTorch, TensorFlow, Scikit-learn</li>
-            <li>Deep Learning Models: CNNs, RNNs, Transformers</li>
-            <li>Generative Models: VAEs, GANs, Diffusion Models</li>
-        </ul>
-    </section>
-
-    <section id="projects" class="section animate__animated animate__slideInLeft">
-        <h2 class="highlight">Projects</h2>
-        <div class="project-list">
-            <div class="project-item animate__animated animate__slideInLeft">Project 1: AI-Powered Song Writing Assistant</div>
-            <div class="project-item animate__animated animate__slideInLeft">Project 2: Stock Price Recommender System</div>
-            <div class="project-item animate__animated animate__slideInLeft">Project 3: Multi-Agent Reinforcement Learning Environment</div>
-        </div>
-    </section>
-
-    <section id="papers" class="section animate__animated animate__fadeInUp">
-        <h2 class="highlight">Papers</h2>
-        <p>Published papers on AI and ML-related research, focusing on applications in engineering and acoustic data analysis.</p>
-    </section>
-
-    <section id="achievements" class="section animate__animated animate__fadeInUp">
-        <h2 class="highlight">Achievements</h2>
-        <p>Achievements include leading teams for engineering challenges, presenting research findings at conferences, and more.</p>
-    </section>
-
-    <section id="contact" class="section animate__animated animate__fadeInUp">
-        <h2 class="highlight">Contact</h2>
-        <p>Reach out to me via email at judyu@example.com or connect on social media.</p>
-    </section>
-
-    <script src="scripts.js"></script>
+    </div>
 </body>
 </html>
