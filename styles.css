@@ -136,14 +136,18 @@ section {
     height: auto; /* Adjust height automatically */
 }
 
-#about { 
-    text-align: center;
+#about {
+    text-align: center; /* Center text */
+    padding: 50px 20px; /* Add padding for spacing */
+    margin: 0; /* Remove any default margin */
+    background-color: transparent; /* Ensure no background color */
 }
 
-#education {
-    background-color: #d9d9d9; /* Background color for education section */
-    text-align: center;
-    padding: 50px 20px; /* Padding for the education section */
+#about {
+    text-align: center; /* Center text */
+    padding: 50px 20px; /* Add padding for spacing */
+    margin: 0; /* Remove any default margin */
+    background-color: transparent; /* Ensure no background color */
 }
 
 .education-item {
