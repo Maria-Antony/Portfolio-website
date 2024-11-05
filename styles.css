@@ -125,3 +125,56 @@ header nav a:hover {
 .social-links a:hover {
     color: #ff58a6;
 }
+
+/* About Section Styles */
+#about {
+    padding-top: 100px;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    margin-top: 50px;
+    padding: 10px 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin: 20px 0;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.timeline-content {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.timeline-content p {
+    color: #aaa;
+    margin: 10px 0 0;
+}
+
+.timeline-date {
+    font-size: 0.9rem;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Timeline Animation */
+.timeline-item.visible .timeline-content {
+    opacity: 1;
+    transform: translateX(0);
+}
