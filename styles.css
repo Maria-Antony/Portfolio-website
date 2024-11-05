@@ -49,106 +49,33 @@ header nav a:hover {
     text-align: center;
 }
 
-.hero {
+.spacer {
+    height: 60px;
+}
+
+/* Projects Slider */
+.projects-slider {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 100px;
-}
-
-.intro h2 {
-    font-size: 36px;
-    color: #fff;
-    opacity: 0;
-    animation: fadeIn 1.5s forwards;
-}
-
-.intro .role {
-    font-size: 24px;
-    color: #ff58a6;
-    margin: 10px 0;
-    opacity: 0;
-    animation: fadeIn 2s forwards;
-}
-
-.intro .description {
-    color: #aaa;
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 400px;
-    margin: 20px auto;
-    opacity: 0;
-    animation: fadeIn 2.5s forwards;
-}
-
-.hire-me {
-    background: linear-gradient(90deg, #ff58a6, #6c63ff);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.hire-me:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
-}
-
-.profile-picture img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-    opacity: 0;
-    animation: fadeIn 3s forwards;
-}
-
-.social-links a {
-    color: #999;
-    font-size: 24px;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #ff58a6;
-}
-
-/* Fade-in animation for text */
-.fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-/* Project Cards */
-.projects-container {
-    display: flex;
-    gap: 20px;
     justify-content: center;
-    flex-wrap: wrap;
+    position: relative;
+}
+
+.project-card-container {
+    display: flex;
+    overflow: hidden;
+    width: 250px;
 }
 
 .project-card {
-    width: 250px;
+    min-width: 250px;
     background-color: #222;
     border-radius: 8px;
     padding: 15px;
     text-align: center;
+    margin: 0 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    opacity: 0;
-    transform: translateY(20px);
-    animation: slideIn 1s forwards;
+    transition: transform 0.5s ease-in-out;
 }
 
 .project-card img {
@@ -156,14 +83,23 @@ header nav a:hover {
     border-radius: 8px;
 }
 
-.project-card h3 {
-    margin-top: 15px;
-    font-size: 20px;
+.slider-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s;
+}
+
+.slider-button:hover {
     color: #ff58a6;
 }
 
-.project-card p {
-    color: #aaa;
-    font-size: 14px;
-    margin
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
