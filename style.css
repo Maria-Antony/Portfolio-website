@@ -1,21 +1,12 @@
-/* Reset */
-body, h1, h2, p, ul, li, a {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Poppins', sans-serif;
     background: linear-gradient(to right, #7f00ff, #e100ff);
     color: #fff;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 15px 30px;
     background-color: #2d2d2d;
 }
@@ -37,7 +28,6 @@ body {
     color: #e100ff;
 }
 
-/* Hero Section */
 .hero-section {
     display: flex;
     justify-content: space-between;
@@ -45,35 +35,25 @@ body {
     padding: 50px 30px;
 }
 
-.hero-text {
-    max-width: 600px;
+.hero-text h1 {
+    font-size: 3rem;
 }
 
-.hero-text .name {
-    color: #e100ff;
+.typing-text {
+    border-right: 2px solid #fff;
+    animation: typing 3s steps(10, end), blink 0.75s step-end infinite;
 }
 
-.social-icons a {
-    color: #fff;
-    margin-right: 15px;
-    font-size: 1.5rem;
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
 }
 
-.cv-btn {
-    margin-top: 20px;
-    background-color: #e100ff;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 20px;
+@keyframes blink {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
 }
 
-.cv-btn:hover {
-    background-color: #7f00ff;
-}
-
-/* Sections */
 .section {
     padding: 50px 30px;
 }
@@ -82,23 +62,4 @@ body {
     text-align: center;
     margin-bottom: 20px;
     font-size: 2rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .hero-section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .hero-image img {
-        width: 100%;
-        max-width: 300px;
-        margin-top: 20px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 10px;
-    }
 }
