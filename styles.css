@@ -199,3 +199,7 @@ header nav a:hover {
     background-color: #ccc;
     z-index: -1;
 }
+
+html {
+    scroll-behavior: smooth;
+}
