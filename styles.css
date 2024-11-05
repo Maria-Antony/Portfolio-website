@@ -1,110 +1,72 @@
-/* General reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f8f9fa;
-    color: #333;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
 }
 
-.container {
-    position: relative;
-    width: 80%;
-    max-width: 1200px;
-    text-align: left;
-    opacity: 0; /* Hide initially */
-    animation: fadeInContainer 1s forwards 0.5s;
+header {
+    text-align: center;
+    padding: 50px;
+    background-color: #4CAF50;
+    color: white;
 }
 
-@keyframes fadeInContainer {
-    to {
-        opacity: 1;
-    }
+nav {
+    background-color: #333;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: flex-end;
-    gap: 1.5rem;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
+    color: white;
     text-decoration: none;
-    color: #666;
-    font-weight: 500;
-    position: relative;
-    transition: color 0.3s;
 }
 
-nav ul li a:hover, nav ul li a.active {
-    color: #6c63ff;
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.hero h2, .hero h1, .hero h3, .hero p, .social-icons, .download-btn, .profile-image {
-    opacity: 0; /* Hide initially */
-    transform: translateY(30px); /* Move downward initially */
+.project-container {
+    overflow: hidden;
+    max-height: 200px;
+    transition: max-height 0.5s ease;
 }
 
-.fade-in {
-    animation: fadeUp 1s forwards 0.3s;
+.project {
+    padding: 10px;
+    background-color: #e7e7e7;
+    margin: 5px 0;
+    border-radius: 5px;
+    animation: slideIn 0.5s forwards;
 }
 
-.fade-in-delay {
-    animation: fadeUp 1s forwards 0.5s;
-}
-
-.fade-in-delay-long {
-    animation: fadeUp 1s forwards 0.7s;
-}
-
-.fade-in-delay-extra {
-    animation: fadeUp 1s forwards 0.9s;
-}
-
-.fade-in-delay-extra-long {
-    animation: fadeUp 1s forwards 1.1s;
-}
-
-@keyframes fadeUp {
+@keyframes slideIn {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
     to {
-        opacity: 1;
         transform: translateY(0);
+        opacity: 1;
     }
 }
 
-.hero h2 {
-    font-size: 2rem;
-    color: #333;
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
 }
-
-.hero h1 {
-    font-size: 3.5rem;
-    color: #333;
-    font-weight: 700;
-    margin: 0.5rem 0;
-}
-
-.hero h3 {
-    font-size: 2rem;
-    color: #6c63ff;
-    font-weight: 600;
-}
-
-.hero p {
-    font-size: 1rem;
-    color: #666;
-    max-width: 600px;
-}
-
-.social-icons a {
-   
