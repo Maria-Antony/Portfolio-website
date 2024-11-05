@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio of Judy U</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">Portfolio.</div>
+            <div class="logo">Portfolio of Judy U</div>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -24,7 +26,7 @@
     <section id="hero" class="hero-section">
         <div class="hero-content">
             <div class="hero-text">
-                <h1>Hello, I am <span class="name">[Your Name]</span></h1>
+                <h1>Hello, I am <span class="typing-text" id="typing-text">Judy U</span></h1>
                 <p>Aspiring Engineer and Developer focused on AI and Machine Learning</p>
                 <div class="social-icons">
                     <a href="#"><i class="fab fa-facebook"></i></a>
@@ -41,40 +43,46 @@
         </div>
     </section>
 
-    <section id="skills" class="section">
+    <section id="about" class="section animate__animated animate__fadeInUp">
+        <h2>About</h2>
+        <p>I am Judy U, currently pursuing my Master's in Artificial Intelligence. I am passionate about developing innovative machine learning solutions for real-world problems, especially in the field of acoustic devices and advanced data analysis.</p>
+    </section>
+
+    <section id="skills" class="section animate__animated animate__fadeInUp">
         <h2>Skills</h2>
-        <div class="skills-container">
-            <p>Python, PyTorch, TensorFlow, Machine Learning, Deep Learning, etc.</p>
-        </div>
+        <ul>
+            <li>Programming: Python, C++, MATLAB</li>
+            <li>Frameworks: PyTorch, TensorFlow, Scikit-learn</li>
+            <li>Deep Learning Models: CNNs, RNNs, Transformers</li>
+            <li>Generative Models: VAEs, GANs, Diffusion Models</li>
+        </ul>
     </section>
 
-    <section id="projects" class="section">
+    <section id="projects" class="section animate__animated animate__fadeInUp">
         <h2>Projects</h2>
-        <div class="projects-container">
-            <!-- Add your project details here -->
-        </div>
+        <p>Some of my notable projects include:</p>
+        <ul>
+            <li><strong>AI-Powered Song Writing Assistant:</strong> Developed using GPT-2 and LSTM.</li>
+            <li><strong>Stock Price Recommender System:</strong> Built using XGBoost and HuggingFace models.</li>
+            <li><strong>Multi-Agent Reinforcement Learning Environment:</strong> Created a 9x9 grid-world environment with various algorithms.</li>
+        </ul>
     </section>
 
-    <section id="papers" class="section">
+    <section id="papers" class="section animate__animated animate__fadeInUp">
         <h2>Papers</h2>
-        <div class="papers-container">
-            <!-- Add your published papers or academic work here -->
-        </div>
+        <p>Published papers on AI and ML-related research, focusing on applications in engineering and acoustic data analysis.</p>
     </section>
 
-    <section id="achievements" class="section">
+    <section id="achievements" class="section animate__animated animate__fadeInUp">
         <h2>Achievements</h2>
-        <div class="achievements-container">
-            <!-- Add your achievements here -->
-        </div>
+        <p>Achievements include leading teams for engineering challenges, presenting research findings at conferences, and more.</p>
     </section>
 
-    <section id="contact" class="section">
+    <section id="contact" class="section animate__animated animate__fadeInUp">
         <h2>Contact</h2>
-        <p>Feel free to reach out via email at [Your Email] or connect on social media.</p>
+        <p>Reach out to me via email at judyu@example.com or connect on social media.</p>
     </section>
 
-    <!-- Font Awesome for social icons -->
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
