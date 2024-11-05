@@ -131,76 +131,36 @@ html {
 }
 
 
-/* About Section */
+section {
+    padding: 50px 20px; /* Padding for sections */
+    height: auto; /* Adjust height automatically */
+}
+
 #about {
-    padding-top: 100px;
+    background-color: #e2e2e2; /* Background color for about section */
     text-align: center;
 }
 
-.timeline {
+ ```css
+#education {
+    background-color: #d9d9d9; /* Background color for education section */
+    text-align: center;
+}
+
+.education-item {
+    margin: 20px 0; /* Spacing between education items */
+}
+
+.education-item h3 {
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.education-item p {
     display: flex;
-    justify-content: center;
-    position: relative;
-    margin-top: 50px;
-    padding: 20px;
+    align-items: center; /* Align icon and text */
+    justify-content: center; /* Center the content */
 }
 
-.timeline-item {
-    position: relative;
-    width: 120px;
-    text-align: center;
-    margin: 0 20px;
-}
-
-.timeline-marker {
-    width: 16px;
-    height: 16px;
-    background-color: #fff;
-    border: 4px solid #2196f3;
-    border-radius: 50%;
-    margin: 0 auto;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-.timeline-marker:hover {
-    transform: scale(1.2);
-}
-
-.timeline-item[data-year]::before {
-    content: attr(data-year);
-    display: block;
-    margin-bottom: 10px;
-    font-size: 1.1rem;
-    color: #888;
-}
-
-.timeline-content {
-    display: none;
-    background: #222;
-    color: #fff;
-    padding: 15px;
-    border-radius: 8px;
-    margin-top: 15px;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 200px;
-    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.timeline-item:hover .timeline-content {
-    display: block;
-}
-
-/* Horizontal Line */
-.timeline::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    height: 4px;
-    background-color: #ccc;
-    z-index: -1;
+.education-item i {
+    margin-right: 10px; /* Space between icon and text */
 }
