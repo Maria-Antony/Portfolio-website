@@ -44,6 +44,10 @@ header nav a:hover {
     color: #fff;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hero {
     display: flex;
     align-items: center;
@@ -126,9 +130,6 @@ header nav a:hover {
     color: #ff58a6;
 }
 
-html {
-    scroll-behavior: smooth;
-}
 
 /* About Section */
 #about {
