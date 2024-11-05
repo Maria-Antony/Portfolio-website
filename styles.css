@@ -1,0 +1,86 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    max-width: 1200px;
+    text-align: left;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #666;
+    font-weight: 500;
+    position: relative;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #6c63ff;
+}
+
+.hero {
+    margin-top: 2rem;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    color: #333;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 1s forwards 0.3s;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    color: #333;
+    font-weight: 700;
+    margin: 0.5rem 0;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 1s forwards 0.5s;
+}
+
+.hero h3 {
+    font-size: 2rem;
+    color: #6c63ff;
+    font-weight: 600;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 1s forwards 0.7s;
+}
+
+.hero p {
+    font-size: 1rem;
+    color: #666;
+    max-width: 600px;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideIn 1s forwards 0.9s;
+}
+
+.social-icons a {
+    margin: 1rem 0.5rem;
+   
