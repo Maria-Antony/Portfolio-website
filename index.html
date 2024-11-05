@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">MyPortfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-text">
+            <h1>Hi, I'm [Your Name]</h1>
+            <p>Aspiring AI/ML Engineer</p>
+            <button class="cta-button" onclick="window.location.href='#projects'">Explore My Work</button>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I'm an engineering student specializing in AI/ML with experience in developing data-driven solutions and scalable systems.</p>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="assets/images/project1.jpg" alt="Project 1">
+                <h3>Project Title</h3>
+                <p>Brief description of the project and its impact.</p>
+            </div>
+            <div class="project-card">
+                <img src="assets/images/project2.jpg" alt="Project 2">
+                <h3>Another Project</h3>
+                <p>Another brief description highlighting your work.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Let's get in touch! You can reach me at:</p>
+        <ul class="contact-info">
+            <li><i class="fas fa-envelope"></i> [your-email@example.com]</li>
+            <li><i class="fas fa-phone"></i> [your-phone-number]</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
