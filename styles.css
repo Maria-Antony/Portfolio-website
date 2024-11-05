@@ -1,17 +1,15 @@
-/* Basic styling, animations, and layout adjustments */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
-
+/* General Styles */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 body {
     background-color: #0a0b1e;
-    color: #fff;
-    scroll-behavior: smooth;
+    color: #ffffff;
+    overflow-x: hidden;
 }
 
 header {
@@ -19,41 +17,26 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    background-color: #0a0b1e;
     position: fixed;
     width: 100%;
-    background-color: #0a0b1e;
-    z-index: 1000;
-}
-
-header h1 {
-    font-size: 24px;
-    color: #fff;
+    z-index: 100;
 }
 
 header nav a {
-    color: #999;
+    color: #aaa;
     text-decoration: none;
     margin: 0 15px;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-header nav a:hover {
-    color: #fff;
 }
 
 .section {
+    padding: 100px 20px;
     max-width: 800px;
-    margin: 100px auto;
-    padding: 20px;
+    margin: 0 auto;
     text-align: center;
 }
 
-.spacer {
-    height: 60px;
-}
-
-/* Projects Slider */
+/* Project Slider */
 .projects-slider {
     display: flex;
     align-items: center;
@@ -64,37 +47,44 @@ header nav a:hover {
 .project-card-container {
     display: flex;
     overflow: hidden;
-    width: 250px;
+    width: 300px;
 }
 
 .project-card {
-    min-width: 250px;
-    background-color: #222;
-    border-radius: 8px;
-    padding: 15px;
-    text-align: center;
+    min-width: 300px;
     margin: 0 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.5s ease-in-out;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transform: scale(0.9);
+    opacity: 0.8;
+    transition: transform 0.5s, opacity 0.5s;
 }
 
 .project-card img {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 5px;
+}
+
+.project-card.active {
+    transform: scale(1);
+    opacity: 1;
 }
 
 .slider-button {
     background: none;
     border: none;
-    font-size: 24px;
     color: #fff;
+    font-size: 24px;
     cursor: pointer;
-    padding: 10px;
-    transition: color 0.3s;
 }
 
-.slider-button:hover {
-    color: #ff58a6;
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
 }
 
 @keyframes fadeIn {
