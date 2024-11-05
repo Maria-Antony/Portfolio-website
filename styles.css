@@ -136,19 +136,29 @@ section {
     height: auto; /* Adjust height automatically */
 }
 
-#about {
-    background-color: #e2e2e2; /* Background color for about section */
+#about { 
     text-align: center;
 }
 
- ```css
 #education {
     background-color: #d9d9d9; /* Background color for education section */
     text-align: center;
+    padding: 50px 20px; /* Padding for the education section */
 }
 
 .education-item {
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center items horizontally */
     margin: 20px 0; /* Spacing between education items */
+    padding: 20px; /* Padding around each item */
+    background-color: #fff; /* White background for each item */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    width: 80%; /* Width of the education item */
+    max-width: 600px; /* Maximum width for larger screens */
+    margin-left: auto; /* Centering */
+    margin-right: auto; /* Centering */
 }
 
 .education-item h3 {
