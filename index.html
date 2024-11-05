@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of Judy U</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
@@ -25,21 +25,15 @@
 
     <section id="hero" class="hero-section">
         <div class="hero-content">
-            <div class="hero-text">
-                <h1>Hello, I am <span class="typing-text" id="typing-text">Judy U</span></h1>
-                <p>Aspiring Engineer and Developer focused on AI and Machine Learning</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin"></i></a>
-                    <a href="#"><i class="fab fa-github"></i></a>
-                </div>
-                <button class="cv-btn">Download CV</button>
+            <h1 class="animate__animated animate__fadeInDown">Hello, I am <span class="typing-text" id="typing-text">Judy U</span></h1>
+            <p class="animate__animated animate__fadeIn">Aspiring Engineer and Developer focused on AI and Machine Learning</p>
+            <div class="social-icons animate__animated animate__fadeIn">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
             </div>
-            <div class="hero-image">
-                <!-- Replace 'path/to/your-image.jpg' with your image file -->
-                <img src="path/to/your-image.jpg" alt="Profile Picture">
-            </div>
+            <button class="cv-btn animate__animated animate__fadeIn">Download CV</button>
         </div>
     </section>
 
@@ -48,7 +42,7 @@
         <p>I am Judy U, currently pursuing my Master's in Artificial Intelligence. I am passionate about developing innovative machine learning solutions for real-world problems, especially in the field of acoustic devices and advanced data analysis.</p>
     </section>
 
-    <section id="skills" class="section animate__animated animate__fadeInUp">
+    <section id="skills" class="section animate__animated animate__zoomIn">
         <h2>Skills</h2>
         <ul>
             <li>Programming: Python, C++, MATLAB</li>
@@ -58,14 +52,13 @@
         </ul>
     </section>
 
-    <section id="projects" class="section animate__animated animate__fadeInUp">
+    <section id="projects" class="section animate__animated animate__slideInLeft">
         <h2>Projects</h2>
-        <p>Some of my notable projects include:</p>
-        <ul>
-            <li><strong>AI-Powered Song Writing Assistant:</strong> Developed using GPT-2 and LSTM.</li>
-            <li><strong>Stock Price Recommender System:</strong> Built using XGBoost and HuggingFace models.</li>
-            <li><strong>Multi-Agent Reinforcement Learning Environment:</strong> Created a 9x9 grid-world environment with various algorithms.</li>
-        </ul>
+        <div class="project-list">
+            <div class="project-item animate__animated animate__slideInLeft">Project 1: AI-Powered Song Writing Assistant</div>
+            <div class="project-item animate__animated animate__slideInLeft">Project 2: Stock Price Recommender System</div>
+            <div class="project-item animate__animated animate__slideInLeft">Project 3: Multi-Agent Reinforcement Learning Environment</div>
+        </div>
     </section>
 
     <section id="papers" class="section animate__animated animate__fadeInUp">
