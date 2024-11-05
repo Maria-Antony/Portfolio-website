@@ -1,72 +1,127 @@
-body {
-    font-family: Arial, sans-serif;
+/* style.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0a0b1e;
+    color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
 }
 
 header {
-    text-align: center;
-    padding: 50px;
-    background-color: #4CAF50;
-    color: white;
-}
-
-nav {
-    background-color: #333;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.project-container {
-    overflow: hidden;
-    max-height: 200px;
-    transition: max-height 0.5s ease;
-}
-
-.project {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
-    background-color: #e7e7e7;
-    margin: 5px 0;
-    border-radius: 5px;
-    animation: slideIn 0.5s forwards;
 }
 
-@keyframes slideIn {
-    from {
-        transform: translateY(20px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
+header h1 {
+    font-size: 24px;
 }
 
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #333;
-    color: white;
+header nav a {
+    color: #999;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: #fff;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.intro .role {
+    font-size: 24px;
+    color: #ff58a6;
+    margin: 10px 0;
+}
+
+.intro .description {
+    color: #aaa;
+    max-width: 400px;
+    margin: 20px auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hire-me {
+    background: linear-gradient(90deg, #ff58a6, #6c63ff);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.hire-me:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+}
+
+.profile-picture {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid transparent;
+    background: linear-gradient(90deg, #ff58a6, #6c63ff);
+    padding: 3px;
+    transition: transform 0.3s ease;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-picture:hover img {
+    transform: scale(1.1);
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #999;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff58a6;
 }
