@@ -4,36 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo">LOGO</div>
+            <div class="logo">MY LOGO</div>
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
             <button class="connect-btn">Let's Connect</button>
         </nav>
     </header>
 
-    <section class="hero">
+    <section id="home" class="hero">
         <div class="hero-content">
-            <div class="intro-text">
-                <span class="tagline">Welcome to my Portfolio</span>
-                <h1>Hi! I'm [Your Name]</h1>
-                <p>I'm an aspiring AI/ML Engineer. I love working on innovative projects and turning ideas into reality.</p>
-                <button class="connect-btn">Let's Connect</button>
-            </div>
-            <div class="astronaut">
-                <img src="images/photo.jpg" alt="Astronaut">
-            </div>
+            <h1 class="typing-text">Hi, I'm [Your Name]</h1>
+            <p>I'm passionate about developing AI/ML solutions and creating impactful projects.</p>
+            <button class="connect-btn">Explore My Work</button>
         </div>
+    </section>
+
+    <section id="skills" class="skills-section">
+        <h2 class="section-title pop-up">My Skills</h2>
+        <p class="section-content pop-up">I am proficient in various technologies, including Python, PyTorch, TensorFlow, and more...</p>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <h2 class="section-title pop-up">Projects</h2>
+        <div class="project-list pop-up">
+            <!-- Add project details here -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2 class="section-title pop-up">Get in Touch</h2>
+        <p class="section-content pop-up">Feel free to connect via [Your Preferred Contact Method]</p>
     </section>
 </body>
 </html>
