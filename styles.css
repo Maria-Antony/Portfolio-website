@@ -126,6 +126,10 @@ header nav a:hover {
     color: #ff58a6;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* About Section */
 #about {
     padding-top: 100px;
@@ -198,8 +202,4 @@ header nav a:hover {
     height: 4px;
     background-color: #ccc;
     z-index: -1;
-}
-
-html {
-    scroll-behavior: smooth;
 }
