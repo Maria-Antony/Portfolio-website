@@ -15,3 +15,13 @@ document.querySelectorAll('nav a').forEach(anchor => {
         });
     });
 });
+
+function toggleDescription(descId) {
+    const descriptions = document.querySelectorAll('.description p');
+    descriptions.forEach(desc => {
+        desc.classList.remove('show'); // Hide all descriptions
+    });
+
+    const selectedDesc = document.getElementById(descId);
+    selectedDesc.classList.toggle('show'); // Toggle the selected description
+}
