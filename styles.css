@@ -115,7 +115,35 @@ html {
     transform: scale(1.1);
 }
 
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0); /* Start and end at the initial position */
+    }
+    50% {
+        transform: translateY(-10px); /* Float up */
+    }
+}
+
+/* .social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #999;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #ff58a6;
+} */
+
+/* Social Links */
 .social-links {
+    display: flex;
+    justify-content: center;
     margin-top: 20px;
 }
 
@@ -129,7 +157,6 @@ html {
 .social-links a:hover {
     color: #ff58a6;
 }
-
 
 section {
     /* background-color: white; */
