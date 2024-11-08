@@ -176,9 +176,9 @@ section {
 }
 
 .description {
-    position: absolute; /* Position the description absolutely */
-    left: 100%; /* Position it to the right of the timeline */
-    top: 0; /* Align it to the top */
+    position: absolute; /* Position it absolutely */
+    left: 0; /* Adjust as needed */
+    top: 100%; /* Position it below the education section */
     width: 200px; /* Set a width for the description box */
     padding: 10px; /* Padding for the description */
     background-color: #f9f9f9; /* Background color for the description */
