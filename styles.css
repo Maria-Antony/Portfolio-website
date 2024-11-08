@@ -177,7 +177,7 @@ section {
 
 .description {
     position: absolute; /* Position it absolutely */
-    left: 0; /* Adjust as needed */
+    left: 100%; /* Adjust as needed */
     top: 100%; /* Position it below the education section */
     width: 200px; /* Set a width for the description box */
     padding: 10px; /* Padding for the description */
