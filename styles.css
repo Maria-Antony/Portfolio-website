@@ -175,6 +175,7 @@ section {
     color: #666;
 }
 
+/* Description styling */
 .description {
     position: absolute;
     width: 250px;
@@ -184,9 +185,18 @@ section {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     z-index: 1000;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.description.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .hidden {
     display: none;
 }
+
 
