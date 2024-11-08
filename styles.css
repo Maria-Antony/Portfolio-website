@@ -132,7 +132,7 @@ html {
 
 
 section {
-    background-color: white;
+    /* background-color: white; */
     padding: 50px 20px; /* Padding for sections */
     height: auto; /* Adjust height automatically */
 }
@@ -141,6 +141,7 @@ section {
     padding: 50px 20px; /* Add padding */
     text-align: center; /* Center the text */
 }
+
 
 #education {
     text-align: center;
