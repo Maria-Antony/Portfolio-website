@@ -14,6 +14,7 @@ body {
     color: #fff;
 }
 
+
 .container {
     max-width: 1200px;
     margin: auto;
@@ -140,7 +141,7 @@ section {
 .about-section {
     background-color: #f9f9f9; /* Light background color */
     padding: 60px 20px; /* Padding around the section */
-    text-align: left; /* Align text to the left */
+    /* Remove text-align center to align text to the left */
 }
 
 .about-section .container {
@@ -152,6 +153,7 @@ section {
     font-size: 2.5em; /* Heading size */
     margin-bottom: 20px; /* Space below the heading */
     color: #333; /* Heading color */
+    text-align: left; /* Align heading text to the left */
 }
 
 .about-section p {
@@ -159,7 +161,9 @@ section {
     line-height: 1.6; /* Line height for readability */
     color: #555; /* Paragraph color */
     margin-bottom: 20px; /* Space below each paragraph */
+    text-align: left; /* Align paragraph text to the left */
 }
+
 
 #education {
     text-align: center;
