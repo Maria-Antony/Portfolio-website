@@ -16,25 +16,18 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-function showDescription(descId) {
-    const descriptions = document.querySelectorAll('.description p');
-    descriptions.forEach(desc => {
-        desc.classList.remove('show'); // Hide all descriptions
+function showDescription(id) {
+    // Hide all descriptions first
+    document.querySelectorAll('.description p').forEach(desc => {
+        desc.classList.add('hidden');
     });
 
-    const selectedDesc = document.getElementById(descId);
-    selectedDesc.classList.add('show'); // Show the selected description
-
-    const descriptionBox = document.querySelector('.description');
-    descriptionBox.style.display = 'block'; // Show the description box
+    // Show the relevant description
+    document.getElementById(id).classList.remove('hidden');
+    document.querySelector('.description').style.display = 'block';
 }
 
 function hideDescription() {
-    const descriptions = document.querySelectorAll('.description p');
-    descriptions.forEach(desc => {
-        desc.classList.remove('show'); // Hide all descriptions
-    });
-
-    const descriptionBox = document.querySelector('.description');
-    descriptionBox.style.display = 'none'; // Hide the description box
+    document.querySelector('.description').style.display = 'none';
 }
+

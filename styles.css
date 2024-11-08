@@ -145,31 +145,54 @@ section {
 
 #education {
     position: relative; /* Set relative positioning for the education section */
+    text-align: center;
 }
 
+/* Timeline styling */
 .timeline {
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack items vertically */
+    position: relative;
+    padding-left: 20px;
 }
 
 .timeline-item {
-    margin-bottom: 20px; /* Space between items */
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+    cursor: pointer;
 }
 
+.timeline-icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.timeline-content h3 {
+    margin: 0;
+}
+
+.timeline-content p {
+    margin: 5px 0;
+    color: #666;
+}
+
+/* Description styling */
 .description {
-    position: absolute; /* Position it absolutely */
-    left: 100%; /* Position it to the right of the education section */
-    top: 0; /* Align it with the top of the education section */
-    width: 200px; /* Set a width for the description box */
-    padding: 10px; /* Padding for the description */
-    background-color: #f9f9f9; /* Background color for the description */
-    border: 1px solid #ccc; /* Border for the description */
-    border-radius: 5px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    display: none; /* Hide by default */
-    z-index: 10; /* Ensure it appears above other elements */
+    position: absolute;
+    top: 0;
+    left: 250px; /* Adjust this value based on layout */
+    width: 250px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
 }
 
 .description p {
-    margin: 0; /* Reset margin for paragraphs */
+    margin: 0;
+    color: #333;
+}
+
+.hidden {
+    display: none;
 }
