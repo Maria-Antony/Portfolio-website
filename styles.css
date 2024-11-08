@@ -144,41 +144,22 @@ section {
 
 
 #education {
-    text-align: center;
-    padding: 50px 20px;
+    position: relative; /* Set relative positioning for the education section */
 }
 
 .timeline {
-    position: relative;
-    max-width: 600px; /* Maximum width for the timeline */
-    margin: 0 auto; /* Center the timeline */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items vertically */
 }
 
 .timeline-item {
-    display: flex;
-    align-items: center;
-    margin: 20px 0; /* Spacing between items */
-    cursor: pointer; /* Change cursor to pointer */
-    transition: transform 0.3s; /* Animation for hover effect */
-}
-
-.timeline-item:hover {
-    transform: scale(1.05); /* Slightly enlarge on hover */
-}
-
-.timeline-icon {
-    font-size: 30px; /* Icon size */
-    margin-right: 15px; /* Space between icon and text */
-}
-
-.timeline-content {
-    text-align: left; /* Align text to the left */
+    margin-bottom: 20px; /* Space between items */
 }
 
 .description {
     position: absolute; /* Position it absolutely */
-    left: 100%; /* Adjust as needed */
-    top: 100%; /* Position it below the education section */
+    left: 100%; /* Position it to the right of the education section */
+    top: 0; /* Align it with the top of the education section */
     width: 200px; /* Set a width for the description box */
     padding: 10px; /* Padding for the description */
     background-color: #f9f9f9; /* Background color for the description */
@@ -189,20 +170,6 @@ section {
     z-index: 10; /* Ensure it appears above other elements */
 }
 
-.hidden {
-    display: none; /* Hide elements by default */
-}
-
-.show {
-    display: block; /* Show elements when toggled */
-    animation: fadeIn 0.5s; /* Fade-in animation */
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+.description p {
+    margin: 0; /* Reset margin for paragraphs */
 }
