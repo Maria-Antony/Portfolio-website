@@ -175,24 +175,18 @@ section {
     color: #666;
 }
 
-/* Description styling */
 .description {
     position: absolute;
-    top: 0;
-    left: 250px; /* Adjust this value based on layout */
     width: 250px;
     padding: 10px;
     background-color: #f9f9f9;
     border: 1px solid #ddd;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
-}
-
-.description p {
-    margin: 0;
-    color: #333;
+    z-index: 1000;
 }
 
 .hidden {
     display: none;
 }
+

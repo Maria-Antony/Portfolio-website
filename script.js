@@ -16,7 +16,9 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-function showDescription(id) {
+function showDescription(id, event) {
+    const descriptionBox = document.querySelector('.description');
+
     // Hide all descriptions first
     document.querySelectorAll('.description p').forEach(desc => {
         desc.classList.add('hidden');
@@ -24,7 +26,11 @@ function showDescription(id) {
 
     // Show the relevant description
     document.getElementById(id).classList.remove('hidden');
-    document.querySelector('.description').style.display = 'block';
+
+    // Display and position the description box near the hovered item
+    descriptionBox.style.display = 'block';
+    descriptionBox.style.left = `${event.pageX + 15}px`; // Position to the right of the mouse
+    descriptionBox.style.top = `${event.pageY + 15}px`;  // Position below the mouse
 }
 
 function hideDescription() {

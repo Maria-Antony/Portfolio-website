@@ -54,14 +54,14 @@
     <section id="education" style="position: relative;">
         <h2>Education</h2>
         <div class="timeline">
-            <div class="timeline-item" onmouseover="showDescription('desc1')" onmouseout="hideDescription()">
+            <div class="timeline-item" onmouseover="showDescription('desc1', event)" onmouseout="hideDescription()">
                 <div class="timeline-icon">🎓</div>
                 <div class="timeline-content">
                     <h3>University Name</h3>
                     <p>Bachelor's Degree in Computer Science</p>
                 </div>
             </div>
-            <div class="timeline-item" onmouseover="showDescription('desc2')" onmouseout="hideDescription()">
+            <div class="timeline-item" onmouseover="showDescription('desc2', event)" onmouseout="hideDescription()">
                 <div class="timeline-icon">🎓</div>
                 <div class="timeline-content">
                     <h3>Another University</h3>
@@ -70,11 +70,13 @@
             </div>
         </div>
     
+        <!-- Description box in a separate section -->
         <div class="description" style="display: none;">
             <p id="desc1" class="hidden">Details about Bachelor's Degree in Computer Science.</p>
             <p id="desc2" class="hidden">Details about Master's Degree in Software Engineering.</p>
         </div>
     </section>
+    
 
     <script src="script.js"></script>
 
