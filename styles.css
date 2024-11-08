@@ -151,6 +151,13 @@ section {
 }
 
 
+#education {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+}
+
 /* Timeline styling */
 .timeline {
     display: flex;
@@ -162,28 +169,20 @@ section {
 .timeline-item {
     display: flex;
     align-items: center;
-    background-color: #34495e;
-    border-radius: 8px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
     padding: 20px;
     margin: 15px 0;
-    width: 80%; /* Adjust width for a boxed look */
+    width: 80%;
     max-width: 600px;
+    border-bottom: 1px solid #ffffff33;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Icon styling */
-.timeline-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #e67e22;
-    color: white;
-    font-size: 24px;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
+.timeline-icon i {
+    font-size: 32px;
+    color: #e67e22;
     margin-right: 20px;
-    flex-shrink: 0;
 }
 
 /* Content styling */
@@ -193,24 +192,25 @@ section {
 
 .timeline-content h3 {
     margin: 0;
-    color: #ecf0f1;
+    color: white;
     font-size: 1.2em;
 }
 
 .timeline-content p {
     margin: 5px 0;
-    color: #bdc3c7;
+    color: #e0e0e0;
 }
 
 .description {
-    color: white;
+    color: #dcdcdc;
 }
 
-/* Animation for showing timeline when scrolled into view */
-.timeline.visible {
-    opacity: 1; /* Fully visible */
-    transform: translateY(0); /* Reset position */
+/* Animation when scrolled into view */
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
+
 
 
 
