@@ -31,5 +31,22 @@ document.addEventListener("DOMContentLoaded", function() {
     animateTimelineItems(); // Run on load in case items are already in view
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const experienceItems = document.querySelectorAll(".experience-item");
+
+    function handleScroll() {
+        experienceItems.forEach(item => {
+            const itemTop = item.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
+            if (itemTop < windowHeight * 0.85) {
+                item.classList.add("visible");
+            }
+        });
+    }
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Trigger once on load in case elements are already in view
+});
+
 
 
