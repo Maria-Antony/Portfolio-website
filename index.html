@@ -51,32 +51,31 @@
         </div>
     </section>
 
-    <!-- Education Section -->
     <section id="education">
         <h2>Education</h2>
         <div class="timeline">
-            <div class="timeline-item" onmouseover="showDescription('gradDesc')" onmouseout="hideDescription()">
-                <div class="timeline-icon">
-                    <i class="bx bx-book"></i>
-                </div>
+            <div class="timeline-item" onmouseover="showDescription('desc1')" onmouseout="hideDescription()">
+                <div class="timeline-icon">🎓</div>
                 <div class="timeline-content">
-                    <h3>Graduate Education</h3>
-                    <p>Master of Science in Artificial Intelligence<br>XYZ University, 2023</p>
+                    <h3>University Name</h3>
+                    <p>Bachelor's Degree in Computer Science</p>
                 </div>
             </div>
-            <div class="timeline-item" onmouseover="showDescription('undergradDesc')" onmouseout="hideDescription()">
-                <div class="timeline-icon">
-                    <i class="bx bx-book"></i>
-                </div>
+            <div class="timeline-item" onmouseover="showDescription('desc2')" onmouseout="hideDescription()">
+                <div class="timeline-icon">🎓</div>
                 <div class="timeline-content">
-                    <h3>Undergraduate Education</h3>
-                    <p>Bachelor of Science in Computer Science<br>ABC University, 2021</p>
+                    <h3>Another University</h3>
+                    <p>Master's Degree in Software Engineering</p>
                 </div>
             </div>
+            <!-- Add more timeline items as needed -->
         </div>
-        <div class="description" id="description">
-            <p id="gradDesc" class="hidden">Detailed description about the Graduate program, its curriculum, and key projects.</p>
-            <p id="undergradDesc" class="hidden">Detailed description about the Undergraduate program, its curriculum, and key projects.</p>
+        
+        <!-- Description box that will appear in this section -->
+        <div class="description" style="display: none;">
+            <p id="desc1" class="hidden">Details about Bachelor's Degree in Computer Science.</p>
+            <p id="desc2" class="hidden">Details about Master's Degree in Software Engineering.</p>
+            <!-- Add more descriptions as needed -->
         </div>
     </section>
 
