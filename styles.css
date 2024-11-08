@@ -14,7 +14,6 @@ body {
     color: #fff;
 }
 
-
 .container {
     max-width: 1200px;
     margin: auto;
@@ -138,32 +137,10 @@ section {
     height: auto; /* Adjust height automatically */
 }
 
-.about-section {
-    background-color: #f9f9f9; /* Light background color */
-    padding: 60px 20px; /* Padding around the section */
-    /* Remove text-align center to align text to the left */
+#about {
+    padding: 50px 20px; /* Add padding */
+    text-align: center; /* Center the text */
 }
-
-.about-section .container {
-    max-width: 800px; /* Maximum width for the content */
-    margin: 0 auto; /* Center the container */
-}
-
-.about-section h2 {
-    font-size: 2.5em; /* Heading size */
-    margin-bottom: 20px; /* Space below the heading */
-    color: #333; /* Heading color */
-    text-align: left; /* Align heading text to the left */
-}
-
-.about-section p {
-    font-size: 1.2em; /* Paragraph size */
-    line-height: 1.6; /* Line height for readability */
-    color: #555; /* Paragraph color */
-    margin-bottom: 20px; /* Space below each paragraph */
-    text-align: left; /* Align paragraph text to the left */
-}
-
 
 #education {
     text-align: center;
