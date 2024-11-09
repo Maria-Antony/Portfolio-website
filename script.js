@@ -89,20 +89,29 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function toggleDescription(event, descriptionId) {
-    event.preventDefault(); // Prevent the default link behavior
+    event.preventDefault(); // Prevent default link behavior
 
     const description = document.getElementById(descriptionId);
     const link = event.target;
 
-    // Toggle the visibility of the description
-    if (description.style.display === "none" || description.style.display === "") {
-        description.style.display = "block";
+    // Toggle 'expanded' class on the description
+    description.classList.toggle("expanded");
+
+    // Update link text based on the current state
+    if (description.classList.contains("expanded")) {
         link.textContent = "Hide Project";
     } else {
-        description.style.display = "none";
         link.textContent = "View Project";
     }
 }
+
+// Initialize all descriptions to be hidden on page load
+document.addEventListener("DOMContentLoaded", () => {
+    const descriptions = document.querySelectorAll(".project-description");
+    descriptions.forEach(description => {
+        description.classList.remove("expanded"); // Ensure descriptions are initially hidden
+    });
+});
 
 // Initialize all descriptions to be hidden on page load
 document.addEventListener("DOMContentLoaded", () => {
