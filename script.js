@@ -88,11 +88,19 @@ document.addEventListener("DOMContentLoaded", function() {
     handleScroll(); // Trigger once on load in case elements are already in view
 });
 
+function toggleDescription(event, descriptionId) {
+    event.preventDefault(); // Prevent default anchor behavior
 
-function toggleDescription(event) {
-    event.preventDefault(); // Prevents page from jumping on link click
-    const description = event.target.previousElementSibling; // Selects the description element
-    description.style.display = description.style.display === 'none' ? 'block' : 'none';
+    const description = document.getElementById(descriptionId);
+
+    // Toggle the "show" class
+    description.classList.toggle('show');
+
+    // If the description is visible, scroll it into view
+    if (description.classList.contains('show')) {
+        description.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
 }
+
 
 
