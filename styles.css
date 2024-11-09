@@ -309,7 +309,7 @@ h2 {
 }
 
 
-/* .projects {
+.projects {
     padding: 50px;
     text-align: center;
 }
@@ -318,7 +318,7 @@ h2 {
     font-size: 2.5em;
     margin-bottom: 30px;
     color: white; /* Heading color */
-}
+} 
 
 .project-grid {
     display: grid;
@@ -359,42 +359,6 @@ h2 {
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-}
-
-.project-link:hover {
-    background-color: #0c1022; /* Darker shade on hover */
-} */
-
-h2 {
-    text-align: center;
-}
-
-.project-card {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.view-description {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.view-description:hover {
-    background-color: #0056b3;
-}
-
-.description {
-    display: none; /* Hidden by default */
-    margin-top: 10px;
-    color: #555;
 }
 
 

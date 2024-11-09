@@ -88,11 +88,3 @@ document.addEventListener("DOMContentLoaded", function() {
     handleScroll(); // Trigger once on load in case elements are already in view
 });
 
-function toggleDescription(descId) {
-    const description = document.getElementById(descId);
-    if (description.style.display === "none" || description.style.display === "") {
-        description.style.display = "block"; // Show the description
-    } else {
-        description.style.display = "none"; // Hide the description
-    }
-}
