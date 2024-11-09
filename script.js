@@ -68,6 +68,7 @@ document.addEventListener("DOMContentLoaded", function() {
 //     animateTimelineItems(); // Run on load in case items are already in view
 // });
 
+
 // # Education
 
 document.addEventListener("DOMContentLoaded", function() {
