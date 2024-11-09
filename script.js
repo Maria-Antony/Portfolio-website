@@ -88,20 +88,11 @@ document.addEventListener("DOMContentLoaded", function() {
     handleScroll(); // Trigger once on load in case elements are already in view
 });
 
-function openModal(title, description) {
-    document.getElementById('modalTitle').innerText = title; // Set the title
-    document.getElementById('modalDescription').innerText = description; // Set the description
-    document.getElementById('projectModal').style.display = "block"; // Show the modal
-}
-
-function closeModal() {
-    document.getElementById('projectModal').style.display = "none"; // Hide the modal
-}
-
-// Close the modal when clicking outside of the modal content
-window.onclick = function(event) {
-    const modal = document.getElementById('projectModal');
-    if (event.target === modal) {
-        modal.style.display = "none";
+function toggleDescription(descId) {
+    const description = document.getElementById(descId);
+    if (description.style.display === "none" || description.style.display === "") {
+        description.style.display = "block"; // Show the description
+    } else {
+        description.style.display = "none"; // Hide the description
     }
 }
