@@ -367,7 +367,6 @@ h2 {
     background-color: #ff58a6;;
 }
 
-/* CSS for the description reveal */
 .project-description {
     max-height: 0;
     opacity: 0;
@@ -381,19 +380,12 @@ h2 {
     opacity: 1;
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
-
 
 .section-title {
     text-align: center;
     margin: 40px 0;
     font-size: 2em;
-    color: white;
+    /* color: white; */
 }
 
 h2 {
@@ -476,7 +468,7 @@ h2 {
     text-align: center;
     margin: 40px 0;
     font-size: 2em;
-    color: white;
+    /* color: white; */
 }
 
 .publications-timeline {
