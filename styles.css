@@ -463,6 +463,47 @@ h2 {
     }
 }
 
+#papers {
+    text-align: center;
+    padding: 40px 20px;
+    color: white;
+    font-size: 2em;
+}
+
+.publication-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.publication-tile {
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.publication-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.publication-details {
+    display: none; /* Hide details by default */
+    margin-top: 10px;
+}
+
+.publication-tile:hover {
+    transform: scale(1.05);
+}
+
+.publication-tile:hover .publication-details {
+    display: block; /* Show details on hover */
+}
 
 
 
