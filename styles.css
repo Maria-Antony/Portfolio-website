@@ -382,6 +382,12 @@ h2 {
     text-align: center;
 }
 
+.achievements {
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
 .achievement-container {
     display: flex;
     flex-direction: row; /* Stack items vertically */
@@ -392,6 +398,7 @@ h2 {
 .achievement-item {
     text-align: center; /* Center text under the logo */
     margin: 20px 0; /* Space between items */
+    color: white;
 }
 
 .achievement-logo {
