@@ -139,6 +139,7 @@ section {
 #about {
     padding: 50px 20px; /* Add padding */
     text-align: center; /* Center the text */
+    color: white;
 }
 
 
@@ -224,7 +225,6 @@ h2 {
 #experience {
     text-align: center;
     padding: 40px 0; /* Space above and below the section */
-    background-color: #f9f9f9; /* Optional: Add a background color */
 }
 
 h2 {
