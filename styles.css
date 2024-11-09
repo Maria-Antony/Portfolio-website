@@ -151,13 +151,13 @@ h2{
     color: #aaa
 }
 
-/* h2{
+h2{
     color: white;
     font-size: 2em;
 }
 
 
-#education {
+/* #education {
     position: relative;
     text-align: center;
     color: white;
@@ -165,7 +165,7 @@ h2{
 }
 
 /* Timeline styling */
-/* .timeline {
+.timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -215,7 +215,7 @@ h2{
 .timeline-item.visible {
     opacity: 1;
     transform: translateY(0);
-} */ */
+} */
 
 #education {
     text-align: center;
