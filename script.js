@@ -16,45 +16,23 @@ document.querySelectorAll('nav a').forEach(anchor => {
     });
 });
 
-// document.addEventListener("DOMContentLoaded", function() {
-//     const educationItems = document.querySelectorAll(".timeline-item"); // Select all education items
-
-//     function handleScroll() {
-//         educationItems.forEach(item => {
-//             const itemTop = item.getBoundingClientRect().top;
-//             const windowHeight = window.innerHeight;
-
-//             // Add the "visible" class if the item is in view
-//             if (itemTop < windowHeight * 0.85 && itemTop > 0) {
-//                 item.classList.add("visible");
-//             } else {
-//                 // Optionally remove the "visible" class if the item is out of view
-//                 item.classList.remove("visible");
-//             }
-//         });
-//     }
 document.addEventListener("DOMContentLoaded", function() {
-    const educationItems = document.querySelectorAll('.education-item');
+    const educationItems = document.querySelectorAll(".timeline-item"); // Select all education items
 
-    const options = {
-        root: null, // Use the viewport as the container
-        rootMargin: '0px',
-        threshold: 0.1 // Trigger when 10% of the item is visible
-    };
+    function handleScroll() {
+        educationItems.forEach(item => {
+            const itemTop = item.getBoundingClientRect().top;
+            const windowHeight = window.innerHeight;
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once it becomes visible
+            // Add the "visible" class if the item is in view
+            if (itemTop < windowHeight * 0.85 && itemTop > 0) {
+                item.classList.add("visible");
+            } else {
+                // Optionally remove the "visible" class if the item is out of view
+                item.classList.remove("visible");
             }
         });
-    }, options);
-
-    educationItems.forEach(item => {
-        observer.observe(item);
-    });
-});
+    }
 
     // Debounce function to limit the rate at which the handleScroll function is called
     function debounce(func, wait) {
@@ -125,25 +103,6 @@ function toggleDescription(event, descriptionId) {
     }
 }
 
-function toggleDescription(event, descriptionId) {
-    event.preventDefault();
-
-    const description = document.getElementById(descriptionId);
-
-    // Toggle the "show" class to reveal or hide the description
-    if (description.classList.contains('show')) {
-        description.classList.remove('show');
-    } else {
-        // Hide any other open descriptions
-        document.querySelectorAll('.project-description.show').forEach(desc => {
-            desc.classList.remove('show');
-        });
-
-        // Show the clicked description and scroll to it
-        description.classList.add('show');
-        description.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-}
 
 
 
