@@ -151,7 +151,7 @@ h2{
     color: #aaa
 }
 
-h2{
+/* h2{
     color: white;
     font-size: 2em;
 }
@@ -165,7 +165,7 @@ h2{
 }
 
 /* Timeline styling */
-.timeline {
+/* .timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -213,6 +213,51 @@ h2{
 
 /* Animation when scrolled into view */
 .timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+} */ */
+
+#education {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.education-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 600px;
+    background: #007bff;
+    color: white;
+    border-radius: 8px;
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.education-icon {
+    font-size: 32px;
+    margin-right: 20px;
+}
+
+.education-content {
+    text-align: left;
+}
+
+.education-content h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.education-content p {
+    margin: 5px 0;
+    color: #ddd;
+}
+
+/* Animation when scrolled into view */
+.education-item.visible {
     opacity: 1;
     transform: translateY(0);
 }
