@@ -424,7 +424,7 @@ h2 {
 .project-link {
     display: inline-block;
     padding: 10px 15px;
-    background-color: #ff58a6;
+    background-color: #0c1022
     color: #fff;
     text-decoration: none;
     border-radius: 5px;
@@ -432,7 +432,7 @@ h2 {
 }
 
 .project-link:hover {
-    background-color: #0c1022;
+    background-color: #ff58a6;;
 }
 
 /* CSS for the description reveal */
