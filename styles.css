@@ -468,13 +468,11 @@ h2 {
     box-sizing: border-box;
 }
 
-
 .section-title {
     text-align: center;
     margin: 40px 0;
     font-size: 2em;
     color: white;
-    background-color: white;
 }
 
 .publications-timeline {
@@ -490,9 +488,16 @@ h2 {
     max-width: 800px;
 }
 
-/* Removed timeline line by omitting the ::before pseudo-element */
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    background: #007bff;
+    height: 100%;
+    transform: translateX(-50%);
+}
 
-/* Style for timeline items */
 .timeline-item {
     position: relative;
     width: 50%;
@@ -590,7 +595,11 @@ h2 {
         width: 100%;
         text-align: center;
     }
+    .timeline::before {
+        left: 4%;
+    }
 }
+
 
 
 
