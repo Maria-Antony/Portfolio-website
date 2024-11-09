@@ -465,6 +465,10 @@ h2 {
 
 /* ENNNNNNNNDDDDDDDD */
 
+h2{
+    text-align: center;
+    color: #white;
+}
 /* Papers Section */
 #papers {
     margin-top: 40px;
@@ -480,14 +484,14 @@ h2 {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s, transform 1s;
-    margin-bottom: 15px;
-    font-size: 0.9em; /* Reduced font size */
-    padding: 8px;
-    border-left: 3px solid #9c27b0; /* Accent color */
+    margin-bottom: 20px;
+    font-size: 1.4em; /* Reduced font size */
+    padding: 10px;
+    border-left: 3px solid #6c63ff; /* Accent color */
 }
 
 .paper-item strong {
-    font-size: 1.5em; /* Title font size */
+    font-size: 1.4em; /* Title font size */
 }
 
 .paper-item em {
@@ -496,16 +500,11 @@ h2 {
     color: #b0b0b0;
 }
 
-.paper-item a {
-    color: #6c63ff;
-    text-decoration: none;
-    font-size: 0.9em;
-    display: inline-block;
+.description {
+    font-size: 1em;
+    color: #cfcfcf;
     margin-top: 5px;
-}
-
-.paper-item a:hover {
-    text-decoration: underline;
+    line-height: 1.4em;
 }
 
 /* Visible class for fade-in effect */
