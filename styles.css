@@ -10,6 +10,7 @@
 }
 
 body {
+    background: url('path/to/your/hero-background.jpg') no-repeat center center; /* Replace with your hero image path */
     color: #fff;
 }
 
@@ -48,7 +49,7 @@ html {
 }
 
 .hero {
-    background: url('images/bg.jpg') no-repeat center center; 
+    /* background: url('images/bg.jpg') no-repeat center center;  */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -140,6 +141,7 @@ section {
     padding: 50px 20px; /* Add padding */
     text-align: center; /* Center the text */
     color: white;
+    background: url('path/to/your/hero-background.jpg') no-repeat center center; /* Replace with your hero image path */
 }
 
 
