@@ -487,7 +487,7 @@ h2 {
 }
 
 .paper-item strong {
-    font-size: 1em; /* Title font size */
+    font-size: 1.5em; /* Title font size */
 }
 
 .paper-item em {
@@ -497,7 +497,7 @@ h2 {
 }
 
 .paper-item a {
-    color: #9c27b0;
+    color: #6c63ff;
     text-decoration: none;
     font-size: 0.9em;
     display: inline-block;
