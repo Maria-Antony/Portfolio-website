@@ -89,18 +89,22 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function toggleDescription(event, descriptionId) {
-    event.preventDefault(); // Prevent default anchor behavior
+    event.preventDefault();
 
     const description = document.getElementById(descriptionId);
 
-    // Toggle the "show" class
-    description.classList.toggle('show');
-
-    // If the description is visible, scroll it into view
-    if (description.classList.contains('show')) {
+    // Toggle the "show" class to control visibility
+    if (description.style.display === "none" || description.style.display === "") {
+        description.style.display = "block"; // Show it before applying the transition
+        description.classList.add('show');
         description.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+        description.classList.remove('show');
+        setTimeout(() => description.style.display = "none", 400); // Hide it after the transition
     }
 }
+
+
 
 
 
