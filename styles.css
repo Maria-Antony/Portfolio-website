@@ -140,7 +140,7 @@ section {
 #about {
     padding: 50px 20px; /* Add padding */
     text-align: center; /* Center the text */
-    color: white;
+    color: black;
     background: url('path/to/your/hero-background.jpg') no-repeat center center; /* Replace with your hero image path */
 }
 
