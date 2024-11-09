@@ -465,18 +465,9 @@ h2 {
 
 /* ENNNNNNNNDDDDDDDD */
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 10px;
-    color: white;
-}
-
 /* Papers Section */
 #papers {
     margin-top: 40px;
-    text-align: center;
-    font-size: 2em;
-    color: white;
 }
 
 /* Paper list styling */
@@ -489,13 +480,35 @@ h2 {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 1s, transform 1s;
-    margin-bottom: 20px;
-    font-size: 1.1em;
-    padding: 10px;
-    border-left: 3px solid #555;
+    margin-bottom: 15px;
+    font-size: 0.9em; /* Reduced font size */
+    padding: 8px;
+    border-left: 3px solid #9c27b0; /* Accent color */
 }
 
-/* Add a class for when the item is visible */
+.paper-item strong {
+    font-size: 1em; /* Title font size */
+}
+
+.paper-item em {
+    font-size: 0.9em; /* Published in font size */
+    font-style: italic;
+    color: #b0b0b0;
+}
+
+.paper-item a {
+    color: #9c27b0;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.paper-item a:hover {
+    text-decoration: underline;
+}
+
+/* Visible class for fade-in effect */
 .paper-item.visible {
     opacity: 1;
     transform: translateY(0);
