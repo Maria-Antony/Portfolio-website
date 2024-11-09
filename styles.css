@@ -378,73 +378,29 @@ h2 {
     opacity: 1;
 }
 
-.carousel {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
-    overflow: hidden;
-}
-
-.carousel-item {
-    display: none; /* Hidden by default */
-    padding: 20px;
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-item.active {
-    display: block; /* Show the active item */
-}
-
-.prev, .next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    border-radius: 50%;
-}
-
-.prev {
-    left: 10px;
-}
-
-.next {
-    right: 10px;
+h2 {
+    text-align: center;
 }
 
 .achievement-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
     margin: 20px 0;
 }
 
 .achievement-item {
-    background: white;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 20px;
-    margin: 10px;
-    width: 250px; /* Adjust width as needed */
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.2s;
-}
-
-.achievement-item:hover {
-    transform: scale(1.05);
+    text-align: center; /* Center text under the logo */
+    margin: 20px 0; /* Space between items */
 }
 
 .achievement-logo {
-    width: 80px; /* Adjust logo size as needed */
+    width: 100px; /* Adjust logo size as needed */
     height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px;
+    margin-bottom: 10px; /* Space between logo and text */
 }
+
+
+
 
 
