@@ -482,37 +482,31 @@ h2 {
     gap: 20px;
 }
 
-.publication-card {
+.publication-item {
+    background-color: white;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     transition: transform 0.3s;
 }
 
-.publication-card:hover {
+.publication-item:hover {
     transform: scale(1.05);
 }
 
-.card-header {
-    display: flex;
-    align-items: center;
-    padding: 15px;
-    background-color: #007bff;
-    color: white;
+.publication-image {
+    width: 100%;
+    height: auto;
 }
 
-.card-header i {
+h3 {
+    margin: 15px 0;
     font-size: 1.5em;
-    margin-right: 10px;
 }
 
-.card-body {
-    padding: 15px;
-    background-color: white;
-}
-
-.card-body p {
+.publication-item p {
     margin-bottom: 10px;
+    padding: 0 15px;
 }
 
 
