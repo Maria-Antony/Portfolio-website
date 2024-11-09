@@ -88,21 +88,6 @@ document.addEventListener("DOMContentLoaded", function() {
     handleScroll(); // Trigger once on load in case elements are already in view
 });
 
-// function toggleDescription(event, descriptionId) {
-//     event.preventDefault();
-
-//     const description = document.getElementById(descriptionId);
-
-//     // Toggle the "show" class to control visibility
-//     if (description.style.display === "none" || description.style.display === "") {
-//         description.style.display = "block"; // Show it before applying the transition
-//         description.classList.add('show');
-//         description.scrollIntoView({ behavior: 'smooth', block: 'start' });
-//     } else {
-//         description.classList.remove('show');
-//         setTimeout(() => description.style.display = "none", 400); // Hide it after the transition
-//     }
-// }
 
 function toggleDescription(event, descriptionId) {
     event.preventDefault(); // Prevent default link behavior
@@ -118,6 +103,25 @@ function toggleDescription(event, descriptionId) {
     }
 }
 
+function toggleDescription(event, descriptionId) {
+    event.preventDefault();
+
+    const description = document.getElementById(descriptionId);
+
+    // Toggle the "show" class to reveal or hide the description
+    if (description.classList.contains('show')) {
+        description.classList.remove('show');
+    } else {
+        // Hide any other open descriptions
+        document.querySelectorAll('.project-description.show').forEach(desc => {
+            desc.classList.remove('show');
+        });
+
+        // Show the clicked description and scroll to it
+        description.classList.add('show');
+        description.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
 
 
 
