@@ -89,20 +89,6 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-function toggleDescription(event, descriptionId) {
-    event.preventDefault(); // Prevent default link behavior
-
-    const description = document.getElementById(descriptionId);
-
-    // Toggle the "show" class to reveal or hide the description
-    description.classList.toggle('show');
-
-    // Smooth scroll into view if it's being shown
-    if (description.classList.contains('show')) {
-        description.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-}
-
 
 
 
