@@ -10,7 +10,7 @@
 }
 
 body {
-    background-color: rgba(29, 15, 109, 0.765);
+    background-color: #0c1022;
     color: white;
 }
 
@@ -226,6 +226,7 @@ h2 {
     text-align: center;
     padding: 40px 0; /* Space above and below the section */
     color: white;
+    background-color: white;
 }
 
 h2 {
