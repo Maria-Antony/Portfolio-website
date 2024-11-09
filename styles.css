@@ -418,4 +418,33 @@ h2 {
     right: 10px;
 }
 
+.achievement-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.achievement-item {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px; /* Adjust width as needed */
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.achievement-item:hover {
+    transform: scale(1.05);
+}
+
+.achievement-logo {
+    width: 80px; /* Adjust logo size as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
 
