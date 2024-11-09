@@ -88,21 +88,36 @@ document.addEventListener("DOMContentLoaded", function() {
     handleScroll(); // Trigger once on load in case elements are already in view
 });
 
+// function toggleDescription(event, descriptionId) {
+//     event.preventDefault();
+
+//     const description = document.getElementById(descriptionId);
+
+//     // Toggle the "show" class to control visibility
+//     if (description.style.display === "none" || description.style.display === "") {
+//         description.style.display = "block"; // Show it before applying the transition
+//         description.classList.add('show');
+//         description.scrollIntoView({ behavior: 'smooth', block: 'start' });
+//     } else {
+//         description.classList.remove('show');
+//         setTimeout(() => description.style.display = "none", 400); // Hide it after the transition
+//     }
+// }
+
 function toggleDescription(event, descriptionId) {
-    event.preventDefault();
+    event.preventDefault(); // Prevent default link behavior
 
     const description = document.getElementById(descriptionId);
 
-    // Toggle the "show" class to control visibility
-    if (description.style.display === "none" || description.style.display === "") {
-        description.style.display = "block"; // Show it before applying the transition
-        description.classList.add('show');
+    // Toggle the "show" class to reveal or hide the description
+    description.classList.toggle('show');
+
+    // Smooth scroll into view if it's being shown
+    if (description.classList.contains('show')) {
         description.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-        description.classList.remove('show');
-        setTimeout(() => description.style.display = "none", 400); // Hide it after the transition
     }
 }
+
 
 
 
