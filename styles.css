@@ -10,7 +10,6 @@
 }
 
 body {
-    background: url('path/to/your/hero-background.jpg') no-repeat center center; /* Replace with your hero image path */
     color: #fff;
 }
 
@@ -49,11 +48,6 @@ html {
 }
 
 .hero {
-    /* background: url('images/bg.jpg') no-repeat center center;  */
-    background: url('images/bg.jpg') no-repeat center center; /* Replace with your hero image path */
-    background-size: cover; /* Cover the entire section */
-    height: 100vh; /* Full viewport height */
-    display: flex; /* Use flexbox for layout */
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -142,10 +136,6 @@ section {
 }
 
 #about {
-    background: url('images/bg.jpg') no-repeat center center; /* Replace with your hero image path */
-    background-size: cover; /* Cover the entire section */
-    height: 100vh; /* Full viewport height */
-    display: flex; /* Use flexbox for layout */
     padding: 50px 20px; /* Add padding */
     text-align: center; /* Center the text */
     color: black;
@@ -153,10 +143,6 @@ section {
 
 
 #education {
-    background: url('images/bg.jpg') no-repeat center center; /* Replace with your hero image path */
-    background-size: cover; /* Cover the entire section */
-    height: 100vh; /* Full viewport height */
-    display: flex; /* Use flexbox for layout */
     position: relative;
     text-align: center;
     color: white; /* Set text color to white */
@@ -211,7 +197,7 @@ section {
 
 .timeline-content p {
     margin: 5px 0;
-    color: black;
+    color: white;
 }
 
 .description {
