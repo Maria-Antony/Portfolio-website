@@ -88,3 +88,11 @@ document.addEventListener("DOMContentLoaded", function() {
     handleScroll(); // Trigger once on load in case elements are already in view
 });
 
+
+function toggleDescription(event) {
+    event.preventDefault(); // Prevents page from jumping on link click
+    const description = event.target.previousElementSibling; // Selects the description element
+    description.style.display = description.style.display === 'none' ? 'block' : 'none';
+}
+
+
