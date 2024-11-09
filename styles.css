@@ -10,8 +10,6 @@
 }
 
 body {
-    /* background-color: #0a0b1e; */
-    background: url('images/bg.jpg') no-repeat center center; /* Replace with your image path */
     color: #fff;
 }
 
@@ -50,6 +48,7 @@ html {
 }
 
 .hero {
+    background: url('images/bg.jpg') no-repeat center center; 
     display: flex;
     align-items: center;
     justify-content: space-between;
