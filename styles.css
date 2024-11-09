@@ -472,8 +472,8 @@ h2 {
 
 h2 {
     margin-bottom: 30px;
-    font-size: 2.5em;
-    color: #007bff;
+    font-size: 2em;
+    color: white;
 }
 
 .publication-grid {
@@ -497,11 +497,6 @@ h2 {
 .publication-image {
     width: 100%;
     height: auto;
-}
-
-h3 {
-    margin: 15px 0;
-    font-size: 1.5em;
 }
 
 .publication-item p {
