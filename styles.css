@@ -472,29 +472,58 @@ h2 {
 .section-title {
     text-align: center;
     margin: 40px 0;
-    font-size: 2.5em;
-    color: #333;
+    font-size: 2em;
+    color: white;
+    background-color: white;
 }
 
-.publications-section {
+.publications-timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 40px 20px;
 }
 
-.publications-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
-    max-width: 1200px;
-    width: 100%;
+.timeline {
+    position: relative;
+    padding: 20px;
+    max-width: 800px;
 }
 
-.publication-card {
-    display: flex;
-    justify-content: center;
-    perspective: 1000px;
+/* Removed timeline line by omitting the ::before pseudo-element */
+
+/* Style for timeline items */
+.timeline-item {
+    position: relative;
+    width: 50%;
+    padding: 20px 0;
+}
+
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 50%;
+    text-align: left;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: inline-block;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+    transform: translateX(-10px);
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+    transform: translateX(10px);
 }
 
 .flip-card {
@@ -557,8 +586,9 @@ h2 {
 }
 
 @media (max-width: 768px) {
-    .publications-grid {
-        grid-template-columns: 1fr;
+    .timeline-item {
+        width: 100%;
+        text-align: center;
     }
 }
 
