@@ -96,15 +96,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);  // Stop observing once it's visible
+                entry.target.classList.add("visible"); // Fade in
+            } else {
+                entry.target.classList.remove("visible"); // Fade out
             }
         });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.1 }); // Adjust threshold for when the effect should trigger
 
     items.forEach(item => observer.observe(item));
 });
-
 
 
 
