@@ -142,6 +142,10 @@ section {
     color: white;
 }
 
+h2{
+    color: white;
+}
+
 .description{
     color: #aaa
 }
@@ -152,6 +156,10 @@ section {
     text-align: center;
     color: white;
     padding: 40px 0;
+}
+
+h2{
+    color: white;
 }
 
 /* Timeline styling */
