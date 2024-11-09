@@ -98,7 +98,7 @@
         </div>
     </section>
 
-    <section class="projects" id="projects">
+    <!-- <section class="projects" id="projects">
         <h2>My Projects</h2>
         <div class="project-grid">
             <div class="project-card">
@@ -132,6 +132,24 @@
                     <p>Short description of the project.</p>
                     <a href="#" class="project-link">View Project</a>
                 </div>
+            </div>
+        </div>
+    </section> -->
+    <section class="projects" id="projects">
+        <h2>My Projects</h2>
+
+        <!-- Project Buttons -->
+        <button class="project-link" onclick="openModal('Project 1', 'Project 1 is a web application that allows users to track their daily tasks and improve productivity. It features a user-friendly interface and integrates with various calendar services.')">View Project 1</button>
+        <button class="project-link" onclick="openModal('Project 2', 'Project 2 is a mobile app designed for fitness enthusiasts. It provides workout plans, nutrition tracking, and progress monitoring to help users achieve their fitness goals.')">View Project 2</button>
+        <button class="project-link" onclick="openModal('Project 3', 'Project 3 is an e-commerce platform that connects local artisans with customers. It supports various payment methods and offers a seamless shopping experience.')">View Project 3</button>
+        <button class="project-link" onclick="openModal('Project 4', 'Project 4 is a data visualization tool that helps businesses analyze their performance metrics through interactive charts and graphs.')">View Project 4</button>
+
+        <!-- Modal Structure -->
+        <div id="projectModal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <h2 id="modalTitle"></h2>
+                <p id="modalDescription"></p>
             </div>
         </div>
     </section>
