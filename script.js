@@ -88,6 +88,22 @@ document.addEventListener("DOMContentLoaded", function() {
     handleScroll(); // Trigger once on load in case elements are already in view
 });
 
+// Papers code below
+
+document.addEventListener("DOMContentLoaded", () => {
+    const items = document.querySelectorAll(".paper-item");
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("visible");
+                observer.unobserve(entry.target);  // Stop observing once it's visible
+            }
+        });
+    }, { threshold: 0.1 });
+
+    items.forEach(item => observer.observe(item));
+});
 
 
 
