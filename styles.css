@@ -221,25 +221,40 @@ h2 {
     color: #333;
 }
 
+#experience {
+    text-align: center;
+    padding: 40px 0; /* Space above and below the section */
+    background-color: #f9f9f9; /* Optional: Add a background color */
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
 /* Experience Timeline Styling */
 .experience-timeline {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center; /* Center items horizontally */
+    max-width: 800px; /* Set a max width for the timeline */
+    margin: 0 auto; /* Center the timeline */
 }
 
 .experience-item {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: flex-start; /* Align items to the left */
     border-left: 2px solid #6c63ff;
     padding-left: 20px;
     margin: 20px 0;
-    width: 80%;
-    max-width: 600px;
+    width: 100%; /* Use full width of the container */
+    max-width: 600px; /* Limit the width of each item */
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
 }
 
 .experience-item::before {
@@ -249,7 +264,7 @@ h2 {
     height: 10px;
     border-radius: 50%;
     background-color: #6c63ff;
-    margin-left: -28px;
+    margin-left: -28px; /* Adjust this value to position the dot */
 }
 
 .experience-details {
