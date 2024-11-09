@@ -38,15 +38,32 @@ document.addEventListener("DOMContentLoaded", function() {
         experienceItems.forEach(item => {
             const itemTop = item.getBoundingClientRect().top;
             const windowHeight = window.innerHeight;
-            if (itemTop < windowHeight * 0.85) {
+
+            // Add the "visible" class if the item is in view
+            if (itemTop < windowHeight * 0.85 && itemTop > 0) {
                 item.classList.add("visible");
+            } else {
+                // Optionally remove the "visible" class if the item is out of view
+                item.classList.remove("visible");
             }
         });
     }
 
-    window.addEventListener("scroll", handleScroll);
+    // Debounce function to limit the rate at which the handleScroll function is called
+    function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+            const later = () => {
+                clearTimeout(timeout);
+                func(...args);
+            };
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+        };
+    }
+
+    window.addEventListener("scroll", debounce(handleScroll, 100));
     handleScroll(); // Trigger once on load in case elements are already in view
 });
-
 
 
