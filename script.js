@@ -113,13 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Initialize all descriptions to be hidden on page load
-document.addEventListener("DOMContentLoaded", () => {
-    const descriptions = document.querySelectorAll(".project-description");
-    descriptions.forEach(description => {
-        description.style.display = "none";
-    });
-});
+
 
 // Papers code below
 
