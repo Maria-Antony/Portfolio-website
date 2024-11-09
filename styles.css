@@ -467,7 +467,7 @@ h2 {
 
 h2{
     text-align: center;
-    color: #white;
+    color: white;
 }
 /* Papers Section */
 #papers {
@@ -485,13 +485,13 @@ h2{
     transform: translateY(20px);
     transition: opacity 1s, transform 1s;
     margin-bottom: 20px;
-    font-size: 1.4em; /* Reduced font size */
+    font-size: 1em; /* Reduced font size */
     padding: 10px;
     border-left: 3px solid #6c63ff; /* Accent color */
 }
 
 .paper-item strong {
-    font-size: 1.4em; /* Title font size */
+    font-size: 1em; /* Title font size */
 }
 
 .paper-item em {
@@ -501,7 +501,7 @@ h2{
 }
 
 .description {
-    font-size: 1em;
+    font-size: 0.7em;
     color: #cfcfcf;
     margin-top: 5px;
     line-height: 1.4em;
