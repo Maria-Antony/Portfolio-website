@@ -457,17 +457,10 @@ h2 {
 
 /* ENNNNNNNNDDDDDDDD */
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: black; /* Change this to your desired color */
-    text-align: center;
-}
-
 #papers {
     margin-top: 40px;
     background-color: white;
-    color: black
+    color: black;
 }
 
 /* Paper list styling */
