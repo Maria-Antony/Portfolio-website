@@ -462,8 +462,9 @@ h2 {
 h2 {
     font-size: 2em;
     margin-bottom: 30px;
-    color: white; /* Change this to your desired color */
+    color: black; /* Change this to your desired color */
     text-align: center;
+    background-color: white;
 }
 
 .papers {
