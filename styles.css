@@ -145,16 +145,11 @@ h2 {
 #about {
     padding: 50px 20px; /* Add padding */
     text-align: center; /* Center the text */
+    color: white;
 }
 
 .description{
     color: #aaa
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: white; /* Change this to your desired color */
 }
 
 #education {
@@ -162,6 +157,8 @@ h2 {
     text-align: center;
     color: white;
     padding: 40px 0;
+    font-size: 2em;
+    margin-bottom: 30px;
 }
 
 /* Timeline styling */
@@ -311,16 +308,10 @@ h2 {
     transform: translateY(0);
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: white; /* Change this to your desired color */
-}
-
 .projects {
     padding: 50px;
     text-align: center;
-    color: black;
+    color: white;
 }
 
 .project-grid {
