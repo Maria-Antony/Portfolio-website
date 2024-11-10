@@ -48,7 +48,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* .hero {
+.hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -113,143 +113,22 @@ html {
 
 .profile-picture:hover img {
     transform: scale(1.1);
-}
+} 
 
-
-/* Social Links Styling */
-/* .social-links {
-    display: flex;
-    gap: 15px; /* Space between each icon */
-}
-
-/* .social-links a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #333; /* Dark background for icon circles */
-    color: #fff;
-    border-radius: 50%; /* Make the icons circular */
-    font-size: 20px;
-    transition: background-color 0.3s, transform 0.3s;
-}
-
-/* .social-links a:hover {
-    background-color: #ff58a6; /* Change background color on hover */
-    transform: scale(1.1); /* Slightly enlarge the icon on hover */
-} */ */ */ */
-
-/* Hero Section */
-.hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding-top: 50px;
-    max-width: 1200px; /* Set max-width for central alignment */
-    margin: auto;
-    gap: 50px; /* Adjust space between sections */
-}
-
-/* Left section with introduction text */
-.intro {
-    flex: 1; /* Allow this section to take up remaining space */
-}
-
-.intro h2 {
-    font-size: 36px;
-    color: #fff;
-}
-
-.intro .role {
-    font-size: 24px;
-    color: #ff58a6;
-    margin: 10px 0;
-}
-
-.intro .description {
-    color: #aaa;
-    max-width: 400px;
-    margin: 20px 0;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.hire-me {
-    background: linear-gradient(90deg, #ff58a6, #6c63ff);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.hire-me:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
-}
-
-/* Right section with profile picture and social links */
-.profile-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1; /* Allow this section to take up remaining space */
-}
-
-.profile-picture {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 6px solid transparent;
-    background: linear-gradient(90deg, #ff58a6, #6c63ff);
-    padding: 3px;
-    transition: transform 0.3s ease;
-}
-
-.profile-picture img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
-
-.profile-picture:hover img {
-    transform: scale(1.1);
-}
-
-/* Social Links Styling */
 .social-links {
-    display: flex;
-    gap: 15px; /* Space between each icon */
     margin-top: 20px;
 }
 
 .social-links a {
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #333; /* Dark background for icon circles */
-    color: #fff;
-    border-radius: 50%; /* Make the icons circular */
-    font-size: 20px;
-    transition: background-color 0.3s, transform 0.3s;
+    color: #999;
+    font-size: 24px;
+    margin: 0 10px;
+    transition: color 0.3s;
 }
 
 .social-links a:hover {
-    background-color: #ff58a6; /* Change background color on hover */
-    transform: scale(1.1); /* Slightly enlarge the icon on hover */
+    color: #ff58a6;
 }
-
-
-
 
 section {
     /* background-color: white; */
@@ -280,6 +159,15 @@ section {
     margin: 40px 0;
     font-size: 2em;
     color: white;
+}
+
+/* #education {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+    font-size: 2em;
+    margin-bottom: 30px;
 }
 
 /* Timeline styling */
