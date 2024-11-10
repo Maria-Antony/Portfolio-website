@@ -161,7 +161,7 @@ section {
     color: white;
 }
 
-#education {
+/* #education {
     position: relative;
     text-align: center;
     color: white;
@@ -221,7 +221,70 @@ section {
 .timeline-item.visible {
     opacity: 1;
     transform: translateY(0);
-} 
+}  */
+
+#education {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+    font-size: 1.5em; /* Reduced font size */
+    margin-bottom: 30px;
+}
+
+/* Timeline styling */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 15px 0;
+    width: 80%;
+    max-width: 600px;
+    border-bottom: 1px solid #ffffff33;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-icon i {
+    font-size: 28px; /* Reduced icon font size */
+    color: white;
+    margin-right: 20px;
+}
+
+/* Content styling */
+.timeline-content {
+    text-align: left;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    color: white;
+    font-size: 1em; /* Reduced font size */
+}
+
+.timeline-content p {
+    margin: 5px 0;
+    color: #aaa;
+    font-size: 0.9em; /* Reduced font size for paragraph */
+}
+
+.description {
+    color: black;
+}
+
+/* Animation when scrolled into view */
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
 
 .experience-title {
     text-align: center;
@@ -323,7 +386,7 @@ section {
     text-align: center;
     margin: 40px 0;
     font-size: 2em;
-    color: black;
+    color: white;
 }
 
 .projects {
