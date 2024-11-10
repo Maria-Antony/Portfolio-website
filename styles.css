@@ -469,7 +469,7 @@ h2 {
     font-size: 2em;
     margin-bottom: 30px;
     color: white; /* Change this to your desired color */
-}
+    text-align: center;
 
 #papers {
     margin-top: 40px;
