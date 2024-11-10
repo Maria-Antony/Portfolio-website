@@ -136,9 +136,11 @@ section {
     height: auto; /* Adjust height automatically */
 }
 
-h2 {
+.about-title {
+    text-align: center;
+    margin: 40px 0;
     font-size: 2em;
-    margin-bottom: 30px;
+    color: white;
 }
 
 
@@ -150,6 +152,13 @@ h2 {
 
 .description{
     color: #aaa
+}
+
+.education-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2em;
+    color: white;
 }
 
 #education {
@@ -214,16 +223,23 @@ h2 {
     transform: translateY(0);
 } 
 
+.experience-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2em;
+    color: black;
+}
+
 #experience {
     text-align: center;
     padding: 40px 0;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: black; /* Default color for h2 */
+.section-title {
     text-align: center;
+    margin: 40px 0;
+    font-size: 2em;
+    color: white;
 }
 
 #experience {
@@ -233,11 +249,6 @@ h2 {
     background-color: white;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: black;
-}
 
 /* Experience Timeline Styling */
 .experience-timeline {
@@ -306,6 +317,13 @@ h2 {
 .experience-item.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+.projects-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2em;
+    color: black;
 }
 
 .projects {
@@ -381,12 +399,6 @@ h2 {
     color: white;
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: white; /* Change this to your desired color */
-}
-
 .achievements {
     padding: 40px 20px;
     display: flex;
@@ -456,6 +468,13 @@ h2 {
 }
 
 /* ENNNNNNNNDDDDDDDD */
+
+.papers-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2em;
+    color: black;
+}
 
 #papers {
     margin-top: 40px;
