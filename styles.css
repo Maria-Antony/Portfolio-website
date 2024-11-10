@@ -468,12 +468,13 @@ h2 {
 h2 {
     font-size: 2em;
     margin-bottom: 30px;
-    color: black; /* Change this to your desired color */
+    color: white; /* Change this to your desired color */
 }
 
 #papers {
     margin-top: 40px;
     background-color: white;
+    color: black
 }
 
 /* Paper list styling */
@@ -490,7 +491,7 @@ h2 {
     font-size: 1em; /* Reduced font size */
     padding: 10px;
     border-left: 3px solid #6c63ff; /* Accent color */
-    color: black
+    text-emphasis-color: black;
 }
 
 .paper-item strong {
@@ -505,7 +506,7 @@ h2 {
 }
 
 .description {
-    font-size: 0.7em;
+    font-size: 0.9em;
     color: black;
     margin-top: 5px;
     line-height: 1.4em;
