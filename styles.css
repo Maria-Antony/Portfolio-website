@@ -136,26 +136,32 @@ section {
     height: auto; /* Adjust height automatically */
 }
 
-
-#about h2 {
-    padding: 50px 20px; /* Add padding */
-    text-align: center; /* Center the text */
+h2 {
     font-size: 2em;
     margin-bottom: 30px;
+}
+
+
+#about {
+    padding: 50px 20px; /* Add padding */
+    text-align: center; /* Center the text */
 }
 
 .description{
     color: #aaa
 }
 
-#education h2{
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: white; /* Change this to your desired color */
+}
+
+#education {
     position: relative;
     text-align: center;
     color: white;
     padding: 40px 0;
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: white; /* Change this to your desired color */
 }
 
 /* Timeline styling */
@@ -225,8 +231,14 @@ h2 {
 #experience {
     text-align: center;
     padding: 40px 0; /* Space above and below the section */
-    text-emphasis-color: black;
+    color: black;
     background-color: white;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
 }
 
 /* Experience Timeline Styling */
@@ -453,10 +465,14 @@ h2 {
 
 /* ENNNNNNNNDDDDDDDD */
 
-.papers h2 {
-    margin-top: 40px;
+h2 {
     font-size: 2em;
+    margin-bottom: 30px;
+    color: white; /* Change this to your desired color */
     text-align: center;
+
+.papers {
+    margin-top: 40px;
     background-color: white;
     color: black
 }
