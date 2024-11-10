@@ -231,14 +231,8 @@ h2 {
 #experience {
     text-align: center;
     padding: 40px 0; /* Space above and below the section */
-    color: black;
+    text-emphasis-color: black;
     background-color: white;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 20px;
-    color: black;
 }
 
 /* Experience Timeline Styling */
@@ -470,8 +464,9 @@ h2 {
     margin-bottom: 30px;
     color: white; /* Change this to your desired color */
     text-align: center;
+}
 
-#papers {
+.papers {
     margin-top: 40px;
     background-color: white;
     color: black
