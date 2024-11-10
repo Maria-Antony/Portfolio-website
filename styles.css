@@ -48,7 +48,7 @@ html {
     scroll-behavior: smooth;
 }
 
-/* .hero {
+.hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -113,7 +113,7 @@ html {
 
 .profile-picture:hover img {
     transform: scale(1.1);
-} */
+}
 
 /* .social-links {
     margin-top: 20px;
@@ -145,89 +145,6 @@ html {
 .social-links a:hover {
     color: #ff58a6;
 } */ */
-
-/* Center and arrange content */
-.hero {
-    display: flex;
-    justify-content: center; /* Center the content horizontally */
-    align-items: center; /* Center content vertically */
-    padding-top: 50px;
-    height: 100vh; /* Full viewport height for centering */
-}
-
-.hero-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1000px; /* Adjust as needed for responsive layout */
-    text-align: center;
-    gap: 40px; /* Space between intro and profile sections */
-}
-
-.intro {
-    text-align: left;
-}
-
-.intro h2 {
-    font-size: 36px;
-    color: #fff;
-}
-
-.intro .role {
-    font-size: 24px;
-    color: #ff58a6;
-    margin: 10px 0;
-}
-
-.intro .description {
-    color: #aaa;
-    max-width: 400px;
-    margin: 20px 0;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-.hire-me {
-    background: linear-gradient(90deg, #ff58a6, #6c63ff);
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.hire-me:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
-}
-
-/* Profile Picture Styling */
-.profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.profile-picture {
-    position: relative;
-    width: 150px; /* Smaller width to bring it closer */
-    height: 150px;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 4px solid transparent;
-    background: linear-gradient(90deg, #ff58a6, #6c63ff);
-    padding: 3px;
-    margin-bottom: 15px; /* Space between picture and social links */
-}
-
-.profile-picture img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-}
 
 /* Social Links Styling */
 .social-links {
