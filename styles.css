@@ -134,9 +134,20 @@ html {
     display: flex;
     flex-direction: column; /* Stack elements vertically */
     align-items: center; /* Center align items */
-    justify-content: center; /* Center content */
     padding-top: 50px;
-    text-align: center; /* Center text */
+}
+
+.hero-content {
+    display: flex; /* Use flexbox for side-by-side layout */
+    align-items: center; /* Center items vertically */
+    justify-content: center; /* Center content */
+    max-width: 1200px; /* Limit the width of the content */
+    width: 100%; /* Full width */
+}
+
+.intro {
+    margin-right: 20px; /* Space between intro and profile picture */
+    text-align: left; /* Align text to the left */
 }
 
 .intro h2 {
@@ -153,7 +164,7 @@ html {
 .intro .description {
     color: #aaa;
     max-width: 400px;
-    margin: 20px auto;
+    margin: 20px 0; /* Adjust margin for better spacing */
     font-size: 16px;
     line-height: 1.5;
 }
@@ -167,7 +178,6 @@ html {
     border-radius: 30px;
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
-    margin-top: 15px; /* Add margin for spacing */
 }
 
 .hire-me:hover {
@@ -179,7 +189,6 @@ html {
     position: relative;
     width: 200px;
     height: 200px;
-    margin: 20px auto; /* Center and add space above */
     border-radius: 50%;
     overflow: hidden;
     border: 6px solid transparent;
