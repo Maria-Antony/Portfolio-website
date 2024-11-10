@@ -136,26 +136,27 @@ section {
     height: auto; /* Adjust height automatically */
 }
 
-h2{
-    color: white;
+h2 {
     font-size: 2em;
+    margin-bottom: 30px;
+    color: white; /* Change this to your desired color */
 }
+
 
 #about {
     padding: 50px 20px; /* Add padding */
     text-align: center; /* Center the text */
-    color: white;
 }
 
 .description{
     color: #aaa
 }
 
-h2{
-    color: white;
+h2 {
     font-size: 2em;
+    margin-bottom: 30px;
+    color: white; /* Change this to your desired color */
 }
-
 
 #education {
     position: relative;
@@ -310,84 +311,16 @@ h2 {
     transform: translateY(0);
 }
 
-/* .projects {
-    padding: 50px;
-    text-align: center;
-}
-
 h2 {
     font-size: 2em;
     margin-bottom: 30px;
-    color: white;
+    color: white; /* Change this to your desired color */
 }
-
-.project-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #fff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    padding: 20px;
-    text-align: left;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-.project-info h3 {
-    font-size: 1.5em;
-    margin: 10px 0;
-}
-
-.project-info p {
-    color: #555;
-    margin-bottom: 15px;
-}
-
-.project-link {
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: #0c1022
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.project-link:hover {
-    background-color: #ff58a6;;
-}
-
-.project-description {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease, opacity 0.5s ease;
-    margin-top: 10px;
-}
-
-.project-description.show {
-    max-height: 200px; /* Adjust as needed */
-    opacity: 1;
-} */
 
 .projects {
     padding: 50px;
     text-align: center;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: white;
+    color: black
 }
 
 .project-grid {
@@ -454,7 +387,13 @@ h2 {
     text-align: center;
     margin: 40px 0;
     font-size: 2em;
-    /* color: white; */
+    color: white;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: white; /* Change this to your desired color */
 }
 
 .achievements {
@@ -462,12 +401,6 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: white;
 }
 
 .achievement-container {
@@ -533,14 +466,15 @@ h2 {
 
 /* ENNNNNNNNDDDDDDDD */
 
-h2{
-    text-align: center;
-    color: black;
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: black; /* Change this to your desired color */
 }
 
 #papers {
     margin-top: 40px;
-    background-color: black;
+    background-color: white;
 }
 
 /* Paper list styling */
