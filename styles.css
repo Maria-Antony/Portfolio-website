@@ -48,7 +48,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.hero {
+/* .hero {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -128,6 +128,94 @@ html {
 
 .social-links a:hover {
     color: #ff58a6;
+} */
+
+.hero {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align items */
+    justify-content: center; /* Center content */
+    padding-top: 50px;
+    text-align: center; /* Center text */
+}
+
+.intro h2 {
+    font-size: 36px;
+    color: #fff;
+}
+
+.intro .role {
+    font-size: 24px;
+    color: #ff58a6;
+    margin: 10px 0;
+}
+
+.intro .description {
+    color: #aaa;
+    max-width: 400px;
+    margin: 20px auto;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.hire-me {
+    background: linear-gradient(90deg, #ff58a6, #6c63ff);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 15px; /* Add margin for spacing */
+}
+
+.hire-me:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+}
+
+.profile-picture {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 20px auto; /* Center and add space above */
+    border-radius: 50%;
+    overflow: hidden;
+    border: 6px solid transparent;
+    background: linear-gradient(90deg, #ff58a6, #6c63ff);
+    padding: 3px;
+    transition: transform 0.3s ease;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.profile-picture:hover img {
+    transform: scale(1.1);
+}
+
+.social-links {
+    margin-top: 20px;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the icons */
+}
+
+.social-links a {
+    color: #999;
+    font-size: 28px; /* Increase icon size for better visibility */
+    margin: 0 15px; /* Increase space between icons */
+    transition: color 0.3s, transform 0.3s; /* Add transform transition */
+}
+
+.social-links a:hover {
+    color: #ff58a6;
+    transform: scale(1.1); /* Slightly enlarge on hover */
 }
 
 section {
@@ -151,7 +239,7 @@ section {
 }
 
 .description{
-    color: #aaa
+    color: #333
 }
 
 .education-title {
@@ -310,6 +398,7 @@ section {
     padding: 40px 0; /* Space above and below the section */
     color: black;
     background-color: white;
+    font-size: 2em;
 }
 
 
