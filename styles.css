@@ -136,32 +136,26 @@ section {
     height: auto; /* Adjust height automatically */
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-}
 
-
-#about {
+#about h2 {
     padding: 50px 20px; /* Add padding */
     text-align: center; /* Center the text */
+    font-size: 2em;
+    margin-bottom: 30px;
 }
 
 .description{
     color: #aaa
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: white; /* Change this to your desired color */
-}
-
-#education {
+#education h2{
     position: relative;
     text-align: center;
     color: white;
     padding: 40px 0;
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: white; /* Change this to your desired color */
 }
 
 /* Timeline styling */
@@ -459,16 +453,10 @@ h2 {
 
 /* ENNNNNNNNDDDDDDDD */
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: black; /* Change this to your desired color */
-    text-align: center;
-    background-color: white;
-}
-
-.papers {
+.papers h2 {
     margin-top: 40px;
+    font-size: 2em;
+    text-align: center;
     background-color: white;
     color: black
 }
