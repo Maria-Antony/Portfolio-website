@@ -224,8 +224,9 @@ h2 {
 
 h2 {
     font-size: 2em;
-    margin-bottom: 20px;
-    color: #333;
+    margin-bottom: 30px;
+    color: black; /* Default color for h2 */
+    text-align: center;
 }
 
 #experience {
@@ -319,7 +320,7 @@ h2 {
 .projects {
     padding: 50px;
     text-align: center;
-    color: black
+    color: black;
 }
 
 .project-grid {
@@ -468,11 +469,11 @@ h2 {
 h2 {
     font-size: 2em;
     margin-bottom: 30px;
-    color: white; /* Change this to your desired color */
+    color: black; /* Change this to your desired color */
     text-align: center;
 }
 
-.papers {
+#papers {
     margin-top: 40px;
     background-color: white;
     color: black
