@@ -310,16 +310,15 @@ h2 {
     transform: translateY(0);
 }
 
+/* .projects {
+    padding: 50px;
+    text-align: center;
+}
+
 h2 {
     font-size: 2em;
     margin-bottom: 30px;
     color: white;
-}
-
-.projects {
-    padding: 50px;
-    text-align: center;
-    
 }
 
 .project-grid {
@@ -378,8 +377,78 @@ h2 {
 .project-description.show {
     max-height: 200px; /* Adjust as needed */
     opacity: 1;
+} */
+
+.projects {
+    padding: 50px;
+    text-align: center;
 }
 
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-info h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.project-info p {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0c1022;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #ff58a6;
+}
+
+.project-description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    margin-top: 10px;
+}
+
+.project-description.show {
+    max-height: 200px; /* Adjust as needed */
+    opacity: 1;
+}
+
+/* Tested content above */
 
 .section-title {
     text-align: center;
@@ -388,18 +457,17 @@ h2 {
     /* color: white; */
 }
 
-h2 {
-    font-size: 2em;
-    margin-bottom: 30px;
-    color: white;
-    text-align: center;
-}
-
 .achievements {
     padding: 40px 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: white;
 }
 
 .achievement-container {
@@ -472,7 +540,7 @@ h2{
 
 #papers {
     margin-top: 40px;
-    background-color: white;
+    background-color: black;
 }
 
 /* Paper list styling */
@@ -498,12 +566,12 @@ h2{
 .paper-item em {
     font-size: 0.9em; /* Published in font size */
     font-style: italic;
-    color: #b0b0b0;
+    color: black;
 }
 
 .description {
     font-size: 0.7em;
-    color: #cfcfcf;
+    color: black;
     margin-top: 5px;
     line-height: 1.4em;
 }

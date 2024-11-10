@@ -88,31 +88,13 @@ document.addEventListener("DOMContentLoaded", function() {
     handleScroll(); // Trigger once on load in case elements are already in view
 });
 
-function toggleDescription(event, descriptionId) {
-    event.preventDefault(); // Prevent default link behavior
+function toggleDescription(event) {
+    event.preventDefault(); // Prevent the default anchor behavior
+    const description = event.target.nextElementSibling; // Get the next sibling (the description)
 
-    const description = document.getElementById(descriptionId);
-    const link = event.target;
-
-    // Toggle 'expanded' class on the description
-    description.classList.toggle("expanded");
-
-    // Update link text based on the current state
-    if (description.classList.contains("expanded")) {
-        link.textContent = "Hide Project";
-    } else {
-        link.textContent = "View Project";
-    }
+    // Toggle the 'show' class to expand/collapse the description
+    description.classList.toggle('show');
 }
-
-// Initialize all descriptions to be hidden on page load
-document.addEventListener("DOMContentLoaded", () => {
-    const descriptions = document.querySelectorAll(".project-description");
-    descriptions.forEach(description => {
-        description.classList.remove("expanded"); // Ensure descriptions are initially hidden
-    });
-});
-
 
 
 // Papers code below
