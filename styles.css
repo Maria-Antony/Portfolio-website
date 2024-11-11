@@ -455,7 +455,7 @@ html {
 
 .papers-title {
     text-align: center;
-    margin: 40px 0;
+    /* margin: 40px 0; */
     font-size: 2em;
     color: black;
 }
