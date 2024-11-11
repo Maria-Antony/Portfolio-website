@@ -557,17 +557,10 @@ html {
   } */
 
   .testimonial-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 300px;
-    max-width: 600px;
-    margin: auto;
     text-align: center;
     position: relative;
-    font-family: Arial, sans-serif;
-    overflow: hidden;
-    padding: 20px;
+    max-width: 600px;
+    padding: 0;
   }
 
   /* Testimonial fade-in and fade-out animation */
