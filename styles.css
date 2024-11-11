@@ -668,24 +668,6 @@ color: #666;
     font-size: 0.9em;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    #testimonials {
-        padding: 15px;
-    }
-
-    .testimonial-title {
-        font-size: 2em;
-    }
-
-    .quote {
-        font-size: 1em;
-    }
-
-    .name {
-        font-size: 1em;
-    }
-}
 
 
 
