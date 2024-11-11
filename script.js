@@ -118,21 +118,21 @@ document.addEventListener("DOMContentLoaded", () => {
 // Testimony section
 
 let currentIndex = 0;
-  const testimonials = document.querySelectorAll('.testimonial');
+const testimonials = document.querySelectorAll('.testimonial');
 
-  function showNextTestimonial() {
-    // Hide the current testimonial
-    testimonials[currentIndex].classList.remove('show');
+function showNextTestimonial() {
+  // Hide the current testimonial
+  testimonials[currentIndex].classList.remove('show');
 
-    // Move to the next testimonial or loop back to the first
-    currentIndex = (currentIndex + 1) % testimonials.length;
+  // Move to the next testimonial or loop back to the first
+  currentIndex = (currentIndex + 1) % testimonials.length;
 
-    // Show the next testimonial
-    testimonials[currentIndex].classList.add('show');
-  }
+  // Show the next testimonial
+  testimonials[currentIndex].classList.add('show');
+}
 
-  // Set an interval to show each testimonial for 10 seconds (10000 milliseconds)
-  setInterval(showNextTestimonial, 10000);
+// Set an interval to show each testimonial for 10 seconds (10000 milliseconds)
+setInterval(showNextTestimonial, 10000);
 
 
 
