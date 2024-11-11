@@ -223,7 +223,7 @@ section {
     transform: translateY(0);
 }  */
 
-.education-title {
+/* .education-title {
     text-align: center;
     margin: 40px 0;
     font-size: 2em;
@@ -239,8 +239,7 @@ section {
     margin-bottom: 30px;
 }
 
-/* Timeline styling */
-.timeline {
+/* .timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -266,8 +265,7 @@ section {
     margin-right: 20px;
 }
 
-/* Content styling */
-.timeline-content {
+/* .timeline-content {
     text-align: left;
 }
 
@@ -277,10 +275,162 @@ section {
     font-size: 1.2em; /* Reduced font size */
 }
 
-.timeline-content p {
+/* .timeline-content p {
     margin: 5px 0;
     color: #aaa;
     font-size: 0.9em; /* Reduced font size for paragraph */
+}
+
+/* .description {
+    color: black;
+}
+
+.timeline-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#experience-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2em;
+    color: black;
+}
+
+#experience {
+    text-align: center;
+    padding: 40px 0;
+    color: black;
+    background-color: white;
+    font-size: 2em;
+}
+
+
+.experience-timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items horizontally */
+    max-width: 800px; /* Set a max width for the timeline */
+    margin: 0 auto; /* Center the timeline */
+}
+
+/* .experience-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align items to the left */
+    border-left: 2px solid #6c63ff;
+    padding-left: 20px;
+    margin: 20px 0;
+    width: 100%; /* Use full width of the container */
+    max-width: 600px; /* Limit the width of each item */
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+    position: relative; /* Ensure the pseudo-element is positioned correctly */
+} */
+
+/* .experience-item::before {
+    content: " ";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #6c63ff;
+    margin-left: -28px; /* Adjust this value to position the dot */
+}
+
+.experience-details {
+    text-align: left;
+}
+
+.experience-details h3 {
+    font-size: 1.4em;
+    color: #333;
+    margin: 0;
+} */
+
+/* .company {
+    font-weight: bold;
+    color: #666;
+    font-size: 1em;
+    margin-top: 4px;
+}
+
+.duration {
+    font-size: 0.9em;
+    color: #999;
+    margin-top: 2px;
+    display: block;
+} */
+
+/* .role-description {
+    margin-top: 10px;
+    color: #555;
+}
+
+.experience-item.visible {
+    opacity: 1;
+    transform: translateY(0);
+}    */
+
+.education-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 1.5em; /* Reduced font size */
+    color: white;
+}
+
+#education {
+    position: relative;
+    text-align: center;
+    color: white;
+    padding: 40px 0;
+    font-size: 1.2em; /* Further reduced font size */
+    margin-bottom: 30px;
+}
+
+/* Timeline styling */
+.timeline {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin: 15px 0;
+    width: 80%;
+    max-width: 600px;
+    border-bottom: 1px solid #ffffff33;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.timeline-icon i {
+    font-size: 24px; /* Reduced icon font size */
+    color: white;
+    margin-right: 20px;
+}
+
+/* Content styling */
+.timeline-content {
+    text-align: left;
+}
+
+.timeline-content h3 {
+    margin: 0;
+    color: white;
+    font-size: 1.1em; /* Reduced font size */
+}
+
+.timeline-content p {
+    margin: 5px 0;
+    color: #aaa;
+    font-size: 0.8em; /* Reduced font size for paragraph */
 }
 
 .description {
@@ -296,7 +446,7 @@ section {
 #experience-title {
     text-align: center;
     margin: 40px 0;
-    font-size: 2em;
+    font-size: 1.5em; /* Reduced font size */
     color: black;
 }
 
@@ -305,9 +455,8 @@ section {
     padding: 40px 0; /* Space above and below the section */
     color: black;
     background-color: white;
-    font-size: 2em;
+    font-size: 1.5em; /* Reduced font size */
 }
-
 
 /* Experience Timeline Styling */
 .experience-timeline {
@@ -348,7 +497,7 @@ section {
 }
 
 .experience-details h3 {
-    font-size: 1.4em;
+    font-size: 1.2em; /* Reduced font size */
     color: #333;
     margin: 0;
 }
@@ -356,12 +505,12 @@ section {
 .company {
     font-weight: bold;
     color: #666;
-    font-size: 1em;
+    font-size: 0.9em; /* Reduced font size */
     margin-top: 4px;
 }
 
 .duration {
-    font-size: 0.9em;
+    font-size: 0.8em; /* Reduced font size */
     color: #999;
     margin-top: 2px;
     display: block;
