@@ -207,8 +207,8 @@ html {
 
 .timeline-content p {
     margin: 5px 0;
-    color: #aaa;
-    font-size: 0.7em; /* Reduced font size for paragraph */
+    color: lightblue;
+    font-size: 0.9em; /* Reduced font size for paragraph */
 }
 
 /* Animation when scrolled into view */
