@@ -609,7 +609,8 @@ color: #666;
 #testimonials{
     background-color: white;
     max-width: 600px;
-    padding: 40px 20px; /* Add spacing at top and bottom */
+    padding: 40px 60px; /* Add spacing at top and bottom */
+    text-align: center;
 }
 
 .testimonial-title{
@@ -629,7 +630,7 @@ color: #333;
 .testimonial {
 opacity: 0;
 transition: opacity 1s ease;
-position: absolute;
+position: relative;
 }
 
 /* Displayed testimonial */
@@ -643,6 +644,7 @@ font-size: 1.5em;
 font-style: italic;
 margin-bottom: 10px;
 color: #555;
+text-align: center;
 }
 
 /* Name and profession style */
@@ -650,11 +652,13 @@ color: #555;
 font-weight: bold;
 font-size: 1em;
 color: #333;
+text-align: center;
 }
 
 .profession {
 font-size: 0.9em;
 color: #777;
+text-align: center;
 }
 
 
