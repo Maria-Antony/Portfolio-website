@@ -606,13 +606,6 @@ font-size: 0.9em;
 color: #666;
 }  */
 
-/* General Reset */
-* {
-    margin: 5;
-    padding: 20;
-    box-sizing: border-box;
-}
-
 /* Testimonials Section */
 #testimonials {
     max-width: 800px;
