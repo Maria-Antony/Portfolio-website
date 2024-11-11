@@ -115,6 +115,23 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach(item => observer.observe(item));
 });
 
+// Testimony section
+
+const testimonials = document.querySelectorAll('.testimonial-item');
+let currentIndex = 0;
+
+function showNextTestimonial() {
+    testimonials[currentIndex].classList.remove('fade-in');
+    testimonials[currentIndex].classList.add('fade-out');
+
+    currentIndex = (currentIndex + 1) % testimonials.length;
+
+    testimonials[currentIndex].classList.remove('fade-out');
+    testimonials[currentIndex].classList.add('fade-in');
+}
+
+setInterval(showNextTestimonial, 4000); // Change testimonial every 4 seconds
+
 
 
 
