@@ -135,7 +135,7 @@ html {
     align-items: center;
     justify-content: space-around; /* Evenly space out items */
     padding-top: 50px;
-    gap: 20px; /* Space between each section */
+    gap: 7px; /* Space between each section */
 }
 
 .intro {
