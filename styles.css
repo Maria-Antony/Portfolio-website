@@ -161,17 +161,17 @@ section {
     color: white;
 }
 
-/* #education {
+ #education { 
     position: relative;
     text-align: center;
     color: white;
     padding: 40px 0;
     font-size: 2em;
     margin-bottom: 30px;
-}
+} 
 
 /* Timeline styling */
-.timeline {
+/* .timeline {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -227,7 +227,7 @@ section {
     text-align: center;
     font-size: 2em;
     color: white
-}
+} */
 
 
 #education {
@@ -293,7 +293,7 @@ section {
     transform: translateY(0);
 }
 
-.experience-title {
+#experience-title {
     text-align: center;
     margin: 40px 0;
     font-size: 2em;
