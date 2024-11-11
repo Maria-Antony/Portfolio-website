@@ -117,7 +117,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Testimony section
 
-let currentIndex = 0;
+et currentIndex = 0;
   const testimonials = document.querySelectorAll('.testimonial');
 
   function showNextTestimonial() {
