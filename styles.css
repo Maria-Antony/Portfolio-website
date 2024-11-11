@@ -556,8 +556,10 @@ html {
     color: #777;
   } */
 
-#testimonial{
+#testimonials{
     background-color: white;
+    max-width: 600px;
+    padding: 40px 20px; /* Add spacing at top and bottom */
 }
 
 .testimonial-title{
@@ -583,6 +585,7 @@ transition: opacity 1s ease;
 /* Displayed testimonial */
 .testimonial.show {
 opacity: 1;
+text-align: center;
 }
 
 /* Quote style */
