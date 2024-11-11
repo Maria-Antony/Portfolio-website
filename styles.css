@@ -48,144 +48,164 @@ html {
     scroll-behavior: smooth;
 }
 
+
 /* .hero {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 50px;
+    justify-content: space-between; /* Tighter spacing between items */
+    padding-top: 30px; /* Reduced top padding */
+    gap: 5px; /* Reduced gap between sections */
 }
 
-.intro h2 {
-    font-size: 36px;
+/* .intro {
+    max-width: 280px; /* Slightly narrower intro text */
+    text-align: center;
+    margin-right: 10px; /* Small margin to separate from the profile image */
+} */
+
+/* .intro h2 {
+    font-size: 32px; /* Slightly smaller font size */
     color: #fff;
-}
+    margin-bottom: 5px; /* Reduced spacing below the heading */
+} */
 
-.intro .role {
-    font-size: 24px;
+/* .intro .role {
+    font-size: 20px; /* Slightly smaller font size */
     color: #ff58a6;
-    margin: 10px 0;
+    margin: 5px 0; Reduced vertical spacing */
 }
 
-.intro .description {
+/* .intro .title-description {
     color: #aaa;
-    max-width: 400px;
-    margin: 20px auto;
-    font-size: 16px;
-    line-height: 1.5;
-}
+    max-width: 350px; /* Slightly narrower width */
+    margin: 15px auto; /* Reduced margin */
+    font-size: 15px; /* Slightly smaller font size */
+    line-height: 1.4; /* Tighter line height */
+} */
 
-.hire-me {
+/* .hire-me {
     background: linear-gradient(90deg, #ff58a6, #6c63ff);
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 30px;
+    padding: 8px 18px; /* Reduced padding for button */
+    font-size: 16px; /* Slightly smaller font size */
+    border-radius: 25px; /* Slightly smaller border radius */
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
-}
+    margin-top: 10px; /* Reduced spacing above button */
+} */
 
-.hire-me:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
-}
+/* .hire-me:hover {
+    transform: translateY(-3px); /* Smaller hover effect */
+    box-shadow: 0 8px 16px rgba(108, 99, 255, 0.3);
+} */
 
-.profile-picture {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    margin: auto;
+/* .profile-picture {
+    width: 130px; /* Smaller profile picture size */
+    height: 130px;
     border-radius: 50%;
     overflow: hidden;
-    border: 6px solid transparent;
+    border: 4px solid transparent; /* Thinner border */
     background: linear-gradient(90deg, #ff58a6, #6c63ff);
-    padding: 3px;
-    transition: transform 0.3s ease;
-}
+    padding: 2px; /* Reduced padding around profile picture */
+    margin-left: 10px; /* Small margin to separate from the intro text */
+} */
 
-.profile-picture img {
+/* .profile-picture img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
     transition: transform 0.3s ease;
-}
-
-.profile-picture:hover img {
-    transform: scale(1.1);
-}
-
-.social-links {
-    margin-top: 20px;
-}
-
-.social-links a {
-    color: #999;
-    font-size: 24px;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-
-.social-links a:hover {
-    color: #ff58a6;
 } */
+
+/* Social Links Styling */
+/* .social-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px; /* Reduced gap between icons */
+    margin-top: 10px; /* Reduced top margin for better alignment */
+} */
+
+/* .social-links a {
+    width: 36px; /* Slightly smaller icons */
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #333;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 18px; /* Slightly smaller font size for icons */
+    transition: background-color 0.3s, transform 0.3s;
+} */
+
+/* .social-links a:hover {
+    background-color: #ff58a6;
+    transform: scale(1.05); /* Slightly smaller hover effect */
+}  */
 
 .hero {
     display: flex;
     align-items: center;
-    justify-content: space-evenly; /* Evenly space out items */
-    padding-top: 50px;
-    gap: 7px; /* Space between each section */
+    justify-content: space-between; /* Tighter spacing between items */
+    padding-top: 30px; /* Reduced top padding */
+    gap: 5px; /* Reduced gap between sections */
 }
 
 .intro {
-    max-width: 300px; /* Limit width of intro text */
+    max-width: 280px; /* Slightly narrower intro text */
     text-align: center;
+    margin-right: 10px; /* Small margin to separate from the profile image */
 }
 
 .intro h2 {
-    font-size: 36px;
+    font-size: 32px; /* Slightly smaller font size */
     color: #fff;
+    margin-bottom: 5px; /* Reduced spacing below the heading */
 }
 
 .intro .role {
-    font-size: 24px;
+    font-size: 20px; /* Slightly smaller font size */
     color: #ff58a6;
-    margin: 10px 0;
+    margin: 5px 0; /* Reduced vertical spacing */
 }
 
 .intro .title-description {
     color: #aaa;
-    max-width: 400px;
-    margin: 20px auto;
-    font-size: 16px;
-    line-height: 1.5;
+    max-width: 350px; /* Slightly narrower width */
+    margin: 15px auto; /* Reduced margin */
+    font-size: 15px; /* Slightly smaller font size */
+    line-height: 1.4; /* Tighter line height */
 }
 
 .hire-me {
     background: linear-gradient(90deg, #ff58a6, #6c63ff);
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    font-size: 18px;
-    border-radius: 30px;
+    padding: 8px 18px; /* Reduced padding for button */
+    font-size: 16px; /* Slightly smaller font size */
+    border-radius: 25px; /* Slightly smaller border radius */
     cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 10px; /* Reduced spacing above button */
 }
 
 .hire-me:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
+    transform: translateY(-3px); /* Smaller hover effect */
+    box-shadow: 0 8px 16px rgba(108, 99, 255, 0.3);
 }
 
 .profile-picture {
-    width: 150px;
-    height: 150px;
+    width: 130px; /* Smaller profile picture size */
+    height: 130px;
     border-radius: 50%;
     overflow: hidden;
-    border: 6px solid transparent;
+    border: 4px solid transparent; /* Thinner border */
     background: linear-gradient(90deg, #ff58a6, #6c63ff);
-    padding: 3px;
+    padding: 2px; /* Reduced padding around profile picture */
+    margin-left: 10px; /* Small margin to separate from the intro text */
 }
 
 .profile-picture img {
@@ -201,26 +221,28 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 8px; /* Reduced gap between icons */
+    margin-top: 10px; /* Reduced top margin for better alignment */
 }
 
 .social-links a {
-    width: 40px;
-    height: 40px;
+    width: 36px; /* Slightly smaller icons */
+    height: 36px;
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #333;
     color: #fff;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 18px; /* Slightly smaller font size for icons */
     transition: background-color 0.3s, transform 0.3s;
 }
 
 .social-links a:hover {
     background-color: #ff58a6;
-    transform: scale(1.1);
+    transform: scale(1.05); /* Slightly smaller hover effect */
 }
+
 
 
 .about-title {
