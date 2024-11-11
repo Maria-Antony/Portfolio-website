@@ -180,7 +180,7 @@ html {
     margin: 15px 0;
     width: 80%;
     max-width: 600px;
-    border-bottom: 1px solid #ffffff33;
+    border-bottom: 1px solid black;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.6s ease, transform 0.6s ease;
@@ -209,8 +209,8 @@ html {
     font-size: 0.5em; /* Reduced font size for paragraph */
 }
 
-.description {
-    color: black;
+.education-description {
+    color: #ffffff33;
 }
 
 /* Animation when scrolled into view */
