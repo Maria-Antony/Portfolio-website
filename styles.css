@@ -156,9 +156,10 @@ html {
 
 .intro .description {
     color: #aaa;
+    max-width: 400px;
+    margin: 20px auto;
     font-size: 16px;
     line-height: 1.5;
-    margin: 20px 0;
 }
 
 .hire-me {
