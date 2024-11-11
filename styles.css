@@ -202,14 +202,14 @@ html {
     font-size: 1.1em; /* Reduced font size */
 } 
 
-.education-description {
-    color: #ffffff33;
-}
-
 .timeline-content p {
     margin: 5px 0;
     color: white;
     font-size: 0.6em; /* Reduced font size for paragraph */
+}
+
+.education-description {
+    color: #ffffff33;
 }
 
 /* Animation when scrolled into view */
