@@ -190,8 +190,9 @@ html {
 .profile-picture img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
     border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 /* Social Links Styling */
@@ -236,7 +237,7 @@ html {
 }
 
 .about-description{
-    color: #333
+    color: #666
 }
 
 
