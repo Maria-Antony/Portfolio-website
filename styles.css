@@ -461,7 +461,7 @@ html {
 }
 
 #papers {
-    margin-top: 40px;
+    /* margin-top: 40px; */
     background-color: white;
     color: black;
 }
@@ -606,54 +606,99 @@ font-size: 0.9em;
 color: #666;
 }  */
 
-#testimonials {
-    background-color: #ffffff; /* Full white background */
-    max-width: 600px;
-    text-align: center;
-    padding: 20px; /* Padding on all sides */
-    padding-bottom: 50px; /* Increased padding at the bottom */
-  }
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  /* Header styling */
-  .header {
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-bottom: 20px;
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
     color: #333;
-  }
+}
 
-  /* Testimonial fade-in and fade-out animation */
-  .testimonial {
-    opacity: 0;
-    transition: opacity 1s ease;
-    position: absolute;
-    width: 100%;
-  }
+/* Testimonials Section */
+#testimonials {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
 
-  /* Displayed testimonial */
-  .testimonial.show {
+/* Title */
+.testimonial-title {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Individual Testimonial */
+.testimonial {
+    display: none; /* Hide all testimonials by default */
+    padding: 20px;
+    border-radius: 8px;
+    background: #ecf0f1;
+    margin-bottom: 20px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Show the current testimonial */
+.testimonial.show {
+    display: block; /* Show the current testimonial */
     opacity: 1;
-  }
+}
 
-  /* Quote style */
-  .quote {
-    font-size: 1.5em;
+/* Quote */
+.quote {
+    font-size: 1.2em;
     font-style: italic;
     margin-bottom: 10px;
-    color: #555;
-  }
+    color: #34495e;
+}
 
-  /* Name and profession style */
-  .name {
+/* Name */
+.name {
     font-weight: bold;
-    font-size: 1em;
-    color: #333;
-  }
+    font-size: 1.1em;
+    margin-bottom: 5px;
+    color: #2980b9;
+}
 
-  .profession {
+/* Profession */
+.profession {
+    color: #7f8c8d;
     font-size: 0.9em;
-    color: #777;
-  }
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #testimonials {
+        padding: 15px;
+    }
+
+    .testimonial-title {
+        font-size: 2em;
+    }
+
+    .quote {
+        font-size: 1em;
+    }
+
+    .name {
+        font-size: 1em;
+    }
+}
 
 
 
