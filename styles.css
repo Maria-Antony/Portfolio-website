@@ -205,8 +205,8 @@ html {
 
 .timeline-content p {
     margin: 5px 0;
-    color: #aaa;
-    font-size: 0.8em; /* Reduced font size for paragraph */
+    color: white;
+    font-size: 0.5em; /* Reduced font size for paragraph */
 }
 
 .description {
