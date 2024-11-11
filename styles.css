@@ -520,44 +520,24 @@ html {
 }
 
 .testimonial-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .testimonial-item {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 600px;
+    position: absolute;
     width: 100%;
     opacity: 0; /* Start hidden */
-    animation: fadeIn 1s forwards; /* Fade in effect */
+    transition: opacity 1s ease-in-out; /* Smooth transition */
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0; /* Start fully transparent */
-    }
-    to {
-        opacity: 1; /* End fully opaque */
-    }
+.fade-in {
+    opacity: 1; /* Fully visible */
 }
 
-@keyframes fadeOut {
-    from {
-        opacity: 1; /* Start fully opaque */
-    }
-    to {
-        opacity: 0; /* End fully transparent */
-    }
-}
-
-/* Optional: Add a class to trigger fade-out */
 .fade-out {
-    animation: fadeOut 1s forwards; /* Fade out effect */
+    opacity: 0; /* Fully hidden */
 }
 
 

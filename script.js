@@ -121,16 +121,23 @@ const testimonials = document.querySelectorAll('.testimonial-item');
 let currentIndex = 0;
 
 function showNextTestimonial() {
+    // Fade out the current testimonial
     testimonials[currentIndex].classList.remove('fade-in');
     testimonials[currentIndex].classList.add('fade-out');
 
+    // Update the index to the next testimonial
     currentIndex = (currentIndex + 1) % testimonials.length;
 
+    // Fade in the next testimonial
     testimonials[currentIndex].classList.remove('fade-out');
     testimonials[currentIndex].classList.add('fade-in');
 }
 
-setInterval(showNextTestimonial, 4000); // Change testimonial every 4 seconds
+// Start the testimonial rotation every 10 seconds
+setInterval(showNextTestimonial, 10000);
+
+// Initialize the first testimonial to be visible
+testimonials[currentIndex].classList.add('fade-in');
 
 
 
