@@ -154,7 +154,7 @@ section {
     color: #333
 }
 
-.education-title {
+/* .education-title {
     text-align: center;
     margin: 40px 0;
     font-size: 2em;
@@ -168,7 +168,7 @@ section {
     padding: 40px 0;
     font-size: 2em;
     margin-bottom: 30px;
-} 
+}  */
 
 /* Timeline styling */
 /* .timeline {
@@ -198,7 +198,7 @@ section {
 }
 
 /* Content styling */
-.timeline-content {
+/* .timeline-content {
     text-align: left;
 }
 
@@ -218,17 +218,17 @@ section {
 }
 
 /* Animation when scrolled into view */
-.timeline-item.visible {
+/* .timeline-item.visible {
     opacity: 1;
     transform: translateY(0);
 }  */
 
-.education-title{
+.education-title {
     text-align: center;
+    margin: 40px 0;
     font-size: 2em;
-    color: white
-} */
-
+    color: white;
+}
 
 #education {
     position: relative;
