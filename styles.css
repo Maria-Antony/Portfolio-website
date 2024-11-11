@@ -507,38 +507,57 @@ html {
     transform: translateY(0);
 }
 
-#testimonials {
-    background-color: #f9f9f9;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-.testimonial-title {
-    font-size: 2.5em;
-    color: #333;
-    margin-bottom: 40px;
-}
+/* Testimony section */
 
 .testimonial-container {
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
     max-width: 600px;
-    margin: 0 auto;
-}
+    margin: auto;
+    text-align: center;
+    position: relative;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
 
-.testimonial-item {
+  /* Testimonial fade-in and fade-out animation */
+  .testimonial {
     position: absolute;
-    width: 100%;
-    opacity: 0; /* Start hidden */
-    transition: opacity 1s ease-in-out; /* Smooth transition */
-}
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
 
-.fade-in {
-    opacity: 1; /* Fully visible */
-}
+  /* Displayed testimonial */
+  .testimonial.show {
+    opacity: 1;
+  }
 
-.fade-out {
-    opacity: 0; /* Fully hidden */
-}
+  /* Quote style */
+  .quote {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #555;
+  }
+
+  /* Name and profession style */
+  .name {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+  }
+
+  .profession {
+    font-size: 0.9em;
+    color: #777;
+  }
+
 
 
 

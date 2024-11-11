@@ -117,27 +117,22 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Testimony section
 
-const testimonials = document.querySelectorAll('.testimonial-item');
 let currentIndex = 0;
+  const testimonials = document.querySelectorAll('.testimonial');
 
-function showNextTestimonial() {
-    // Fade out the current testimonial
-    testimonials[currentIndex].classList.remove('fade-in');
-    testimonials[currentIndex].classList.add('fade-out');
+  function showNextTestimonial() {
+    // Hide the current testimonial
+    testimonials[currentIndex].classList.remove('show');
 
-    // Update the index to the next testimonial
+    // Move to the next testimonial or loop back to the first
     currentIndex = (currentIndex + 1) % testimonials.length;
 
-    // Fade in the next testimonial
-    testimonials[currentIndex].classList.remove('fade-out');
-    testimonials[currentIndex].classList.add('fade-in');
-}
+    // Show the next testimonial
+    testimonials[currentIndex].classList.add('show');
+  }
 
-// Start the testimonial rotation every 10 seconds
-setInterval(showNextTestimonial, 10000);
-
-// Initialize the first testimonial to be visible
-testimonials[currentIndex].classList.add('fade-in');
+  // Set an interval to show each testimonial for 10 seconds (10000 milliseconds)
+  setInterval(showNextTestimonial, 10000);
 
 
 
