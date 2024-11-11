@@ -609,8 +609,9 @@ color: #666;
 #testimonials {
     background-color: #ffffff; /* Full white background */
     max-width: 600px;
-    padding: 60px 20px; /* Spacing at the top and bottom */
     text-align: center;
+    padding: 20px; /* Padding on all sides */
+    padding-bottom: 50px; /* Increased padding at the bottom */
   }
 
   /* Header styling */
