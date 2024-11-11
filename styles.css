@@ -130,12 +130,6 @@ html {
     color: #ff58a6;
 }
 
-section {
-    /* background-color: white; */
-    padding: 50px 20px; /* Padding for sections */
-    height: auto; /* Adjust height automatically */
-}
-
 .about-title {
     text-align: center;
     margin: 40px 0;
