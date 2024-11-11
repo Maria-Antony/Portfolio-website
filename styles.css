@@ -299,9 +299,9 @@ section {
 }
 
 .role-description {
+    font-size: 1.1em;
     margin-top: 10px;
     color: #555;
-    font-size: 1em;
 }
 
 /* Animation */
