@@ -205,11 +205,12 @@ html {
 .timeline-content p {
     margin: 5px 0;
     color: white;
-    font-size: 0.6em; /* Reduced font size for paragraph */
+    font-size: 0.8em; /* Reduced font size for paragraph */
 }
 
 .education-description {
-    color: #ffffff33;
+    color: #aaa;
+    font-size: 0.5em;
 }
 
 /* Animation when scrolled into view */
