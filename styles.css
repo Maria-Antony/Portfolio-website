@@ -582,6 +582,7 @@ html {
     color: black;
     margin-top: 5px;
     line-height: 1.4em;
+    font-style: normal;
 }
 
 /* Visible class for fade-in effect */
