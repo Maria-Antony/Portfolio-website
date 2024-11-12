@@ -362,7 +362,7 @@ html {
     background-color: #ff58a6;
 }
 
-.project-description {
+/* .project-description {
     max-height: 0;
     opacity: 0;
     overflow: hidden;
@@ -373,6 +373,20 @@ html {
 .project-description.show {
     max-height: 200px; /* Adjust as needed */
     opacity: 1;
+} */
+
+.project-description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    margin-top: 10px;
+}
+
+.project-description.show {
+    max-height: none; /* Allow the height to expand */
+    opacity: 1;
+    overflow-y: auto; /* Allow scrolling if content exceeds the height */
 }
 
 /* Tested content above */
@@ -486,7 +500,7 @@ html {
 }
 
 .paper-item strong {
-    font-size: 1em; /* Title font size */
+    font-size: 1.3em; /* Title font size */
     color: black;
 }
 
