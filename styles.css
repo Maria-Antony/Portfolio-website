@@ -588,122 +588,27 @@ html {
 
 /* Testimony section */
 
-/* #testimonials{
+#testimonials {
     background-color: white;
-    padding: 40px 60px; /* Add spacing at top and bottom */
     text-align: center;
-}
+    padding: 40px;
+    position: relative;
+  }
 
 .testimonial-title{
     color: black;
     text-align: center;
     font-size:2em;
-}  
-
-
-.header {
-font-size: 1.5em;
-font-weight: bold;
-margin-bottom: 20px;
-color: #333;
-} 
-
-/* .testimonial {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 1s ease;
-} 
-
-.testimonial.show {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}   
-
-
-.quote {
-font-size: 1.5em;
-font-style: italic;
-margin-bottom: 10px;
-color: #555;
-text-align: center;
-} 
-
-.name {
-font-weight: bold;
-font-size: 1em;
-color: #333;
-text-align: center;
-} 
-
-.profession {
-font-size: 0.9em;
-color: #777;
-text-align: center; */
-}   */
-
-/* #testimonials {
-    text-align: center;
-    padding: 40px;
-    position: relative;
   }
   
-  .testimonial-container {
-    position: relative;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .testimonial-show {
-    opacity: 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    transition: opacity 1s ease-in-out;
-  }
-  
-  .testimonial-show.active {
-    opacity: 1;
-  }
-  
-  .quote {
-    font-style: italic;
-    margin: 20px 0;
-  }
-  
-  .name {
-    font-weight: bold;
-    margin-top: 10px;
-  }
-  
-  .profession {
-    font-size: 0.9em;
-    color: #555;
-  } */
-
-  #testimonials {
-    background-color: white;
-    text-align: center;
-    padding: 40px;
-    position: relative;
-  }
-
-  .testimonial-title{
-    color: black;
-    text-align: center;
-  }
-  
-  .testimonial-container {
+.testimonial-container {
     position: relative;
     max-width: 800px;
     margin: 0 auto;
     height: 200px; /* Adjust height as needed */
   }
   
-  .testimonial-show {
+.testimonial-show {
     position: absolute;
     top: 0;
     left: 0;
@@ -712,34 +617,34 @@ text-align: center; */
     animation: fadeOut 1s ease-in-out forwards;
   }
   
-  .testimonial-show.active {
+.testimonial-show.active {
     animation: fadeIn 1s ease-in-out forwards;
   }
   
-  @keyframes fadeIn {
+@keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
   }
   
-  @keyframes fadeOut {
+@keyframes fadeOut {
     from { opacity: 1; }
     to { opacity: 0; }
   }
   
-  .quote {
+.quote {
     font-style: italic;
     margin: 20px 0;
     color: #666;
   }
   
-  .name {
+.name {
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
     color: black
   }
   
-  .profession {
+.profession {
     font-size: 0.9em;
     color: #555;
     text-align: center
