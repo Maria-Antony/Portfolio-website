@@ -589,17 +589,17 @@ html {
 /* Testimony section */
 
 #testimonials {
-    background-color: white;
+    color: white;
     text-align: center;
     padding: 40px;
     position: relative;
-  }
+}
 
 .testimonial-title{
     color: black;
     text-align: center;
-    font-size:2em;
-  }
+    font-size: 2em;
+}
   
 .testimonial-container {
     position: relative;
