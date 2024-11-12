@@ -620,8 +620,7 @@ html {
   
 .testimonial-show.active {
     animation: fadeIn 1s ease-in-out forwards;
-    opacity: 1;
-    z-index: 2;
+    
   }
   
 @keyframes fadeIn {
