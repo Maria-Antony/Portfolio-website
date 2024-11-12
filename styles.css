@@ -74,7 +74,7 @@ html {
     line-height: 1.5;
 }
 
-.contact-me {
+.Contact-me {
     background: linear-gradient(90deg, #ff58a6, #6c63ff);
     color: #fff;
     border: none;
@@ -85,7 +85,7 @@ html {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.contact-me:hover {
+.Contact-me:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
 }
@@ -569,13 +569,19 @@ opacity: 1;
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+    height: 200px; /* Ensure consistent height */
+    overflow: hidden;
+    opacity: 1;
+    transition: opacity 1s ease;
 }
 
 .testimonial {
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     opacity: 0;
-    transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease;
 }
 
 .testimonial.show {
