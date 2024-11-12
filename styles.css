@@ -685,10 +685,10 @@ text-align: center; */
   } */
 
   #testimonials {
+    background-color: white;
     text-align: center;
     padding: 40px;
     position: relative;
-    background-color: white;
   }
 
   .testimonial-title{
