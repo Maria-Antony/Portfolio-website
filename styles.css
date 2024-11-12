@@ -608,17 +608,16 @@ margin-bottom: 20px;
 color: #333;
 }
 
+/* Testimonial fade-in and fade-out animation */
+.testimonial {
+opacity: 0;
+transition: opacity 1s ease;
+position: relative;
+}
 
-.testimonial-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    height: 200px; /* Ensure consistent height */
-    overflow: hidden;
-    opacity: 1;
-    transition: opacity 1s ease;
+/* Displayed testimonial */
+.testimonial.show {
+opacity: 1;
 } 
 
 .testimonial {
@@ -628,7 +627,7 @@ color: #333;
     width: 100%;
     opacity: 0;
     transition: opacity 1s ease;
-}
+} */
 
  .testimonial.show {
     opacity: 1;
