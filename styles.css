@@ -303,6 +303,78 @@ html {
     transform: translateY(0);
 }
 
+/* .projects-title {
+    text-align: center;
+    margin: 40px 0;
+    font-size: 2em;
+    color: white;
+}
+
+.projects {
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.project-info h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+    color: black;
+}
+
+.project-info p {
+    color: #555;
+    margin-bottom: 15px;
+} */ 
+
+/* .project-link {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #0c1022;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+} */
+
+/* .project-link:hover {
+    background-color: #ff58a6;
+} */
+
+/* .project-description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    margin-top: 10px;
+}
+
+.project-description.show {
+    max-height: 200px;
+    opacity: 1;
+} */
+
 .projects-title {
     text-align: center;
     margin: 40px 0;
@@ -362,19 +434,6 @@ html {
     background-color: #ff58a6;
 }
 
-/* .project-description {
-    max-height: 0;
-    opacity: 0;
-    overflow: hidden;
-    transition: max-height 0.5s ease, opacity 0.5s ease;
-    margin-top: 10px;
-}
-
-.project-description.show {
-    max-height: 200px; /* Adjust as needed */
-    opacity: 1;
-} */
-
 .project-description {
     max-height: 0;
     opacity: 0;
@@ -384,10 +443,8 @@ html {
 }
 
 .project-description.show {
-    max-height: 500px; /* Adjust the max height to fit your needs */
+    max-height: 500px; /* Set to a reasonable height to allow expansion */
     opacity: 1;
-    overflow-y: auto; /* Allows scrolling if content exceeds max-height */
-    padding-right: 10px; /* To prevent text from overlapping with scrollbar */
 }
 
 /* Tested content above */
