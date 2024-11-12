@@ -588,35 +588,35 @@ html {
 
 /* Testimony section */
 
-/* #testimonials{
+#testimonials{
     background-color: white;
     padding: 40px 60px; /* Add spacing at top and bottom */
     text-align: center;
 }
 
-/* .testimonial-title{
+.testimonial-title{
     color: black;
     text-align: center;
     font-size:2em;
-} */
+} 
 
-  /* Header styling */
-/* .header {
+
+.header {
 font-size: 1.5em;
 font-weight: bold;
 margin-bottom: 20px;
 color: #333;
-} */
+} 
 
-/* Testimonial fade-in and fade-out animation */
-/* .testimonial {
+
+ .testimonial {
 opacity: 0;
 transition: opacity 1s ease;
 position: relative;
-} */
+} 
 
-/* Displayed testimonial */
-/* .testimonial.show {
+
+.testimonial.active {
 opacity: 1;
 } 
 
@@ -627,83 +627,35 @@ opacity: 1;
     width: 100%;
     opacity: 0;
     transition: opacity 1s ease;
-}  */
+} 
 
- /* .testimonial.show {
+.testimonial.show {
     opacity: 1;
     transition: opacity 1s ease-in-out;
-}   */
+}   
 
-/* Quote style */
-/* .quote {
+
+.quote {
 font-size: 1.5em;
 font-style: italic;
 margin-bottom: 10px;
 color: #555;
 text-align: center;
-} */
+} 
 
-/* .name {
+.name {
 font-weight: bold;
 font-size: 1em;
 color: #333;
 text-align: center;
-} */
-
-/* .profession {
-font-size: 0.9em;
-color: #777;
-text-align: center;
-}  */
-
-
-#testimonials {
-    text-align: center;
-    padding: 40px;
-    position: relative;
-    background-color: white;
-  }
-
-.testimonial-title{
-    text-align: center;
-    padding: 2pc;
-    color: black
-
-}
-
-.testimonial-container {
-position: relative;
-max-width: 800px;
-margin: 0 auto;
-}
-
-.testimonial {
-opacity: 0;
-position: absolute;
-top: 0;
-left: 0;
-right: 0;
-transition: opacity 1s ease-in-out;
-}
-
-.testimonial.active {
-opacity: 1;
-}
-
-.quote {
-font-style: italic;
-margin: 20px 0;
-}
-
-.name {
-font-weight: bold;
-margin-top: 10px;
-}
+} 
 
 .profession {
 font-size: 0.9em;
-color: #555;
-}
+color: #777;
+text-align: center; */
+}  
+
 
 
 
