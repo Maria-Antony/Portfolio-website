@@ -88,13 +88,13 @@ document.addEventListener("DOMContentLoaded", function() {
     handleScroll(); // Trigger once on load in case elements are already in view
 });
 
-function toggleDescription(event) {
-    event.preventDefault(); // Prevent the default anchor behavior
-    const description = event.target.nextElementSibling; // Get the next sibling (the description)
+// function toggleDescription(event) {
+//     event.preventDefault(); // Prevent the default anchor behavior
+//     const description = event.target.nextElementSibling; // Get the next sibling (the description)
 
-    // Toggle the 'show' class to expand/collapse the description
-    description.classList.toggle('show');
-}
+//     // Toggle the 'show' class to expand/collapse the description
+//     description.classList.toggle('show');
+// }
 
 
 // Papers code below
@@ -115,13 +115,11 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach(item => observer.observe(item));
 });
 
-document.querySelectorAll('.project-link').forEach(link => {
-    link.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
-        const description = this.nextElementSibling; // Assuming the description is directly after the link
-        description.classList.toggle('show');
-    });
-});
+function toggleDescription(event, id) {
+    event.preventDefault(); // Prevents default link behavior
+    const description = document.getElementById(id);
+    description.classList.toggle("show");
+}
 
 // Testimony section
 

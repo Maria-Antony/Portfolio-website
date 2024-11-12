@@ -384,9 +384,10 @@ html {
 }
 
 .project-description.show {
-    max-height: none; /* Allow the height to expand */
+    max-height: 300px; /* Set a fixed height limit for expandable content */
     opacity: 1;
-    overflow-y: auto; /* Allow scrolling if content exceeds the height */
+    overflow-y: auto; /* Allows scrolling if content exceeds max-height */
+    padding-right: 10px; /* Adds padding to avoid text overlap with scrollbar */
 }
 
 /* Tested content above */
