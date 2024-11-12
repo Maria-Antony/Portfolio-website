@@ -96,6 +96,14 @@ document.addEventListener("DOMContentLoaded", function() {
 //     description.classList.toggle('show');
 // }
 
+document.querySelectorAll('.project-link').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        const description = this.nextElementSibling; // Get the next sibling (the description)
+        description.classList.toggle('show'); // Toggle the 'show' class
+    });
+});
+
 
 // Papers code below
 
