@@ -688,6 +688,12 @@ text-align: center; */
     text-align: center;
     padding: 40px;
     position: relative;
+    background-color: white;
+  }
+
+  .testimonial-title{
+    color: black;
+    text-align: center;
   }
   
   .testimonial-container {
@@ -723,16 +729,20 @@ text-align: center; */
   .quote {
     font-style: italic;
     margin: 20px 0;
+    color: #666;
   }
   
   .name {
     font-weight: bold;
     margin-top: 10px;
+    text-align: center;
+    color: black
   }
   
   .profession {
     font-size: 0.9em;
     color: #555;
+    text-align: center
   }
   
   
