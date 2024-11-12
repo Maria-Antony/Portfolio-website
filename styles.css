@@ -552,15 +552,17 @@ html {
     transform: translateY(20px);
     transition: opacity 1s, transform 1s;
     margin-bottom: 20px;
-    font-size: 1em; /* Reduced font size */
+    font-size: 0.9em; /* Reduced font size */
     padding: 10px;
-    border-left: 3px solid #6c63ff; /* Accent color */
+    border-left: 13px solid #6c63ff; /* Accent color */
     text-emphasis-color: black;
+    font-style: italic;
 }
 
 .paper-title{
-    font-size:1.5em;
-    color: black
+    font-size:1.2em;
+    color: black;
+    font-weight: bold;
 }
 
 .paper-item strong {
@@ -569,9 +571,10 @@ html {
 }
 
 .paper-item em {
-    font-size: 0.9em; /* Published in font size */
+    font-size: 1em; /* Published in font size */
     font-style: italic;
     color: black;
+    font-weight: bold;
 }
 
 .description {
