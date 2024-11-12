@@ -157,17 +157,12 @@ document.addEventListener("DOMContentLoaded", function() {
   
     function showNextTestimonial() {
       testimonials[currentIndex].classList.remove('active');
-      currentIndex = (currentIndex + 1) % testimonials.length;
-    //   testimonials[currentIndex].classList.add('active');
-       // Add 'active' to the next testimonial after a short delay
-        setTimeout(() => {
-            testimonials[currentIndex].classList.add('active');
-        }, 5000); // Adjust delay to smoothen transition
-
+      currentIndex = (currentIndex + 1) % testimonials.length+1;
+      testimonials[currentIndex].classList.add('active');
     }
   
     // Set interval to rotate testimonials every 5 seconds
-    setInterval(showNextTestimonial, 5000);
+    setInterval(showNextTestimonial, 2000);
   });
   
   
