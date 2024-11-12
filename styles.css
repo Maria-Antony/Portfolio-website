@@ -499,8 +499,13 @@ html {
     text-emphasis-color: black;
 }
 
+.paper-title{
+    font-size:1.5em;
+    color: black
+}
+
 .paper-item strong {
-    font-size: 1.3em; /* Title font size */
+    font-size: 1.5em; /* Title font size */
     color: black;
 }
 

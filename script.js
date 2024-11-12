@@ -115,6 +115,14 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach(item => observer.observe(item));
 });
 
+document.querySelectorAll('.project-link').forEach(link => {
+    link.addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent default link behavior
+        const description = this.nextElementSibling; // Assuming the description is directly after the link
+        description.classList.toggle('show');
+    });
+});
+
 // Testimony section
 
 let currentIndex = 0;
