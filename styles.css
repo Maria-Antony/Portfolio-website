@@ -340,6 +340,7 @@ html {
 .project-info h3 {
     font-size: 1.5em;
     margin: 10px 0;
+    color: black;
 }
 
 .project-info p {
