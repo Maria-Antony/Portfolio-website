@@ -118,7 +118,13 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleDescription(event, id) {
     event.preventDefault(); // Prevents default link behavior
     const description = document.getElementById(id);
-    description.classList.toggle("show"); // Toggle visibility
+    
+    // Toggle the 'show' class to expand or collapse the description
+    if (description.classList.contains("show")) {
+        description.classList.remove("show");
+    } else {
+        description.classList.add("show");
+    }
 }
 
 // Testimony section

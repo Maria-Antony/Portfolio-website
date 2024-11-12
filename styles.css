@@ -375,15 +375,19 @@ html {
     opacity: 1;
 } */
 
-..project-description {
-    display: none; /* Hide by default */
-    max-height: 300px; /* Set a max height for scrolling */
-    overflow-y: auto;
-    padding-right: 10px;
+.project-description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    margin-top: 10px;
 }
 
 .project-description.show {
-    display: block; /* Show when .show is added */
+    max-height: 500px; /* Adjust the max height to fit your needs */
+    opacity: 1;
+    overflow-y: auto; /* Allows scrolling if content exceeds max-height */
+    padding-right: 10px; /* To prevent text from overlapping with scrollbar */
 }
 
 /* Tested content above */
