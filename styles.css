@@ -596,7 +596,7 @@ html {
 }
 
 .testimonial-title{
-    color: black;
+    color: white;
     text-align: center;
     font-size: 2em;
 }
@@ -634,19 +634,19 @@ html {
 .quote {
     font-style: italic;
     margin: 20px 0;
-    color: #666;
+    color: lightblue;
   }
   
 .name {
     font-weight: bold;
     margin-top: 10px;
     text-align: center;
-    color: black
+    color: white;
   }
   
 .profession {
     font-size: 0.9em;
-    color: #555;
+    color: white;
     text-align: center
   }
   
