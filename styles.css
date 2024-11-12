@@ -588,35 +588,35 @@ html {
 
 /* Testimony section */
 
-#testimonials{
+/* #testimonials{
     background-color: white;
     padding: 40px 60px; /* Add spacing at top and bottom */
     text-align: center;
 }
 
-.testimonial-title{
+/* .testimonial-title{
     color: black;
     text-align: center;
     font-size:2em;
-}
+} */
 
   /* Header styling */
-.header {
+/* .header {
 font-size: 1.5em;
 font-weight: bold;
 margin-bottom: 20px;
 color: #333;
-}
+} */
 
 /* Testimonial fade-in and fade-out animation */
-.testimonial {
+/* .testimonial {
 opacity: 0;
 transition: opacity 1s ease;
 position: relative;
-}
+} */
 
 /* Displayed testimonial */
-.testimonial.show {
+/* .testimonial.show {
 opacity: 1;
 } 
 
@@ -627,38 +627,90 @@ opacity: 1;
     width: 100%;
     opacity: 0;
     transition: opacity 1s ease;
-} */
+}  */
 
- .testimonial.show {
+ /* .testimonial.show {
     opacity: 1;
     transition: opacity 1s ease-in-out;
-}  
+}   */
 
 /* Quote style */
-.quote {
+/* .quote {
 font-size: 1.5em;
 font-style: italic;
 margin-bottom: 10px;
 color: #555;
 text-align: center;
-}
+} */
 
-/* Name and profession style */
-.name {
+/* .name {
 font-weight: bold;
 font-size: 1em;
 color: #333;
 text-align: center;
-}
+} */
 
-.profession {
+/* .profession {
 font-size: 0.9em;
 color: #777;
 text-align: center;
+}  */
+
+
+#testimonials {
+    background-color: white;
+    padding: 40px 60px; /* Add spacing at top and bottom */
+    text-align: center;
 }
 
+.testimonial-title {
+    color: black;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px; /* Space below the title */
+}
 
+.testimonial-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    height: 200px; /* Ensure consistent height */
+    overflow: hidden;
+}
 
+.testimonial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+    padding: 20px; /* Add padding to ensure text is not cut off */
+}
+
+.testimonial.show {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.quote {
+    font-size: 1.5em;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 1em;
+    color: #333;
+}
+
+.profession {
+    font-size: 0.9em;
+    color: #777;
+}
 
 
 
