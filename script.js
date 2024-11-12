@@ -152,27 +152,16 @@ function toggleDescription(event, descriptionId) {
 // setInterval(showNextTestimonial, 10000);
 
 const testimonials = document.querySelectorAll('.testimonial');
-let currentIndex = 0;
+  let currentIndex = 0;
 
-function showTestimonial(index) {
-    testimonials.forEach((testimonial, i) => {
-        testimonial.classList.remove('show'); // Remove 'show' class from all testimonials
-        if (i === index) {
-            testimonial.classList.add('show'); // Add 'show' class to the current testimonial
-        }
-    });
-}
+  function showNextTestimonial() {
+    testimonials[currentIndex].classList.remove('active');
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    testimonials[currentIndex].classList.add('active');
+  }
 
-function nextTestimonial() {
-    currentIndex = (currentIndex + 1) % testimonials.length; // Loop back to the first testimonial
-    showTestimonial(currentIndex);
-}
-
-// Show the first testimonial initially
-showTestimonial(currentIndex);
-
-// Change testimonial every 5 seconds (5000 ms)
-setInterval(nextTestimonial, 10000);
+  // Set interval to rotate testimonials every 5 seconds
+  setInterval(showNextTestimonial, 5000);
 
 
 
