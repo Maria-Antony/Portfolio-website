@@ -124,16 +124,12 @@ document.addEventListener("DOMContentLoaded", () => {
     items.forEach(item => observer.observe(item));
 });
 
-function toggleDescription(event, id) {
-    event.preventDefault(); // Prevents default link behavior
-    const description = document.getElementById(id);
-    
+function toggleDescription(event, descriptionId) {
+    event.preventDefault();
+    const description = document.getElementById(descriptionId);
+
     // Toggle the 'show' class to expand or collapse the description
-    if (description.classList.contains("show")) {
-        description.classList.remove("show");
-    } else {
-        description.classList.add("show");
-    }
+    description.classList.toggle("show");
 }
 
 // Testimony section
@@ -155,29 +151,52 @@ function toggleDescription(event, id) {
 // // Set an interval to show each testimonial for 10 seconds (10000 milliseconds)
 // setInterval(showNextTestimonial, 10000);
 
-document.addEventListener("DOMContentLoaded", function() {
-    let currentIndex = 0;
-    const testimonials = document.querySelectorAll(".testimonial");
-    const totalTestimonials = testimonials.length;
-    const intervalTime = 10000; // 10 seconds
+// document.addEventListener("DOMContentLoaded", function() {
+//     let currentIndex = 0;
+//     const testimonials = document.querySelectorAll(".testimonial");
+//     const totalTestimonials = testimonials.length;
+//     const intervalTime = 10000; // 10 seconds
 
-    function showNextTestimonial() {
-        // Fade out the current testimonial
-        testimonials[currentIndex].classList.remove("show");
+//     function showNextTestimonial() {
+//         // Fade out the current testimonial
+//         testimonials[currentIndex].classList.remove("show");
 
-        // Move to the next testimonial
-        currentIndex = (currentIndex + 1) % totalTestimonials;
+//         // Move to the next testimonial
+//         currentIndex = (currentIndex + 1) % totalTestimonials;
 
-        // Fade in the next testimonial
-        testimonials[currentIndex].classList.add("show");
-    }
+//         // Fade in the next testimonial
+//         testimonials[currentIndex].classList.add("show");
+//     }
 
-    // Initially show the first testimonial
-    testimonials[currentIndex].classList.add("show");
+//     // Initially show the first testimonial
+//     testimonials[currentIndex].classList.add("show");
 
-    // Change testimonial every 10 seconds
-    setInterval(showNextTestimonial, intervalTime);
-});
+//     // Change testimonial every 10 seconds
+//     setInterval(showNextTestimonial, intervalTime);
+// });
+
+const testimonials = document.querySelectorAll('.testimonial');
+let currentIndex = 0;
+
+function showTestimonial(index) {
+    testimonials.forEach((testimonial, i) => {
+        testimonial.classList.remove('show');
+        if (i === index) {
+            testimonial.classList.add('show');
+        }
+    });
+}
+
+function nextTestimonial() {
+    currentIndex = (currentIndex + 1) % testimonials.length;
+    showTestimonial(currentIndex);
+}
+
+// Show the first testimonial initially
+showTestimonial(currentIndex);
+
+// Change testimonial every 5 seconds (5000 ms)
+setInterval(nextTestimonial, 5000);
 
 
 

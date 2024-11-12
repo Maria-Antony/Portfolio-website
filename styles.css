@@ -620,7 +620,7 @@ position: relative;
 opacity: 1;
 } */ 
 
-.testimonial-container {
+/* .testimonial-container {
     position: relative;
     width: 100%;
     max-width: 600px;
@@ -632,6 +632,30 @@ opacity: 1;
     transition: opacity 1s ease;
 }
 
+/* .testimonial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease;
+} */
+
+/* .testimonial.show {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}  */
+
+.testimonial-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    height: 200px; /* Ensure consistent height */
+    overflow: hidden;
+}
+
 .testimonial {
     position: absolute;
     top: 0;
@@ -639,6 +663,7 @@ opacity: 1;
     width: 100%;
     opacity: 0;
     transition: opacity 1s ease;
+    padding: 20px; /* Add padding to ensure text is not cut off */
 }
 
 .testimonial.show {
