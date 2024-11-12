@@ -74,7 +74,7 @@ html {
     line-height: 1.5;
 }
 
-.hire-me {
+.contact-me {
     background: linear-gradient(90deg, #ff58a6, #6c63ff);
     color: #fff;
     border: none;
@@ -85,7 +85,7 @@ html {
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.hire-me:hover {
+.contact-me:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
 }
@@ -552,15 +552,35 @@ color: #333;
 }
 
 /* Testimonial fade-in and fade-out animation */
-.testimonial {
+/* .testimonial {
 opacity: 0;
 transition: opacity 1s ease;
 position: relative;
 }
 
 /* Displayed testimonial */
-.testimonial.show {
+/* .testimonial.show {
 opacity: 1;
+} */ 
+
+.testimonial-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.testimonial {
+    position: absolute;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.testimonial.show {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
 }
 
 /* Quote style */
