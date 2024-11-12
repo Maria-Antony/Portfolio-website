@@ -118,7 +118,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function toggleDescription(event, id) {
     event.preventDefault(); // Prevents default link behavior
     const description = document.getElementById(id);
-    description.classList.toggle("show");
+    description.classList.toggle("show"); // Toggle visibility
 }
 
 // Testimony section
