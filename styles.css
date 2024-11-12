@@ -443,7 +443,7 @@ html {
 }
 
 .project-description.show {
-    max-height: 500px; /* Set to a reasonable height to allow expansion */
+    max-height: 1000px; /* Temporarily high value for smooth transition; will be auto-set */
     opacity: 1;
 }
 
@@ -620,32 +620,6 @@ position: relative;
 opacity: 1;
 } */ 
 
-/* .testimonial-container {
-    position: relative;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: center;
-    height: 200px; /* Ensure consistent height */
-    overflow: hidden;
-    opacity: 1;
-    transition: opacity 1s ease;
-}
-
-/* .testimonial {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    transition: opacity 1s ease;
-} */
-
-/* .testimonial.show {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}  */
-
 .testimonial-container {
     position: relative;
     width: 100%;
@@ -654,7 +628,9 @@ opacity: 1;
     text-align: center;
     height: 200px; /* Ensure consistent height */
     overflow: hidden;
-}
+    opacity: 1;
+    transition: opacity 1s ease;
+} 
 
 .testimonial {
     position: absolute;
@@ -663,13 +639,12 @@ opacity: 1;
     width: 100%;
     opacity: 0;
     transition: opacity 1s ease;
-    padding: 20px; /* Add padding to ensure text is not cut off */
-}
+} */
 
-.testimonial.show {
+ .testimonial.show {
     opacity: 1;
     transition: opacity 1s ease-in-out;
-}
+}  
 
 /* Quote style */
 .quote {

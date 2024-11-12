@@ -134,69 +134,24 @@ function toggleDescription(event, descriptionId) {
 
 // Testimony section
 
-// let currentIndex = 0;
-// const testimonials = document.querySelectorAll('.testimonial');
-
-// function showNextTestimonial() {
-//   // Hide the current testimonial
-//   testimonials[currentIndex].classList.remove('show');
-
-//   // Move to the next testimonial or loop back to the first
-//   currentIndex = (currentIndex + 1) % testimonials.length;
-
-//   // Show the next testimonial
-//   testimonials[currentIndex].classList.add('show');
-// }
-
-// // Set an interval to show each testimonial for 10 seconds (10000 milliseconds)
-// setInterval(showNextTestimonial, 10000);
-
-// document.addEventListener("DOMContentLoaded", function() {
-//     let currentIndex = 0;
-//     const testimonials = document.querySelectorAll(".testimonial");
-//     const totalTestimonials = testimonials.length;
-//     const intervalTime = 10000; // 10 seconds
-
-//     function showNextTestimonial() {
-//         // Fade out the current testimonial
-//         testimonials[currentIndex].classList.remove("show");
-
-//         // Move to the next testimonial
-//         currentIndex = (currentIndex + 1) % totalTestimonials;
-
-//         // Fade in the next testimonial
-//         testimonials[currentIndex].classList.add("show");
-//     }
-
-//     // Initially show the first testimonial
-//     testimonials[currentIndex].classList.add("show");
-
-//     // Change testimonial every 10 seconds
-//     setInterval(showNextTestimonial, intervalTime);
-// });
-
-const testimonials = document.querySelectorAll('.testimonial');
 let currentIndex = 0;
+const testimonials = document.querySelectorAll('.testimonial');
 
-function showTestimonial(index) {
-    testimonials.forEach((testimonial, i) => {
-        testimonial.classList.remove('show');
-        if (i === index) {
-            testimonial.classList.add('show');
-        }
-    });
+function showNextTestimonial() {
+  // Hide the current testimonial
+  testimonials[currentIndex].classList.remove('show');
+
+  // Move to the next testimonial or loop back to the first
+  currentIndex = (currentIndex + 1) % testimonials.length;
+
+  // Show the next testimonial
+  testimonials[currentIndex].classList.add('show');
 }
 
-function nextTestimonial() {
-    currentIndex = (currentIndex + 1) % testimonials.length;
-    showTestimonial(currentIndex);
-}
+// Set an interval to show each testimonial for 10 seconds (10000 milliseconds)
+setInterval(showNextTestimonial, 10000);
 
-// Show the first testimonial initially
-showTestimonial(currentIndex);
 
-// Change testimonial every 5 seconds (5000 ms)
-setInterval(nextTestimonial, 5000);
 
 
 
