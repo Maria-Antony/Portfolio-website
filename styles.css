@@ -286,6 +286,7 @@ html {
 }
 
 .place{
+    font-weight: bold;
     font-size: 0.5em; /* Further reduced font size */
     color: #999;
     margin-top: 2px;
