@@ -285,6 +285,12 @@ html {
     margin-top: 4px;
 }
 
+.place{
+    font-weight: bold;
+    color: #666;
+    font-size: 0.5em; /* Further reduced font size */
+}
+
 .duration {
     font-size: 0.7em; /* Further reduced font size */
     color: #999;
