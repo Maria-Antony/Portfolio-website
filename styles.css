@@ -599,6 +599,17 @@ html {
     transform: translateY(0);
 }
 
+.paper-link {
+    color: black;  /* Black color */
+    font-size: 0.9em;
+    font-style: normal;
+    text-decoration: none; /* Remove underline */
+}
+
+.paper-link:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
 /* Testimony section */
 
 #testimonials {
