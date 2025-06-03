@@ -40,7 +40,7 @@
             <div class="social-links">
                 <a href="https://github.com/Maria-Antony"><i class="bx bxl-github"></i></a>
                 <a href="mailto:maria65.antony@gmail.com"><i class="bx bxl-gmail"></i></a>
-                <a href="https://linkedin.com/in/maria-pushparaj-buff-ny"><i class="bx bxl-linkedin"></i></a>
+                <a href="https://linkedin.com/in/maria-pushparaj"><i class="bx bxl-linkedin"></i></a>
             </div>
         </section>
     </div>
@@ -118,12 +118,40 @@
     <section class="projects" id="projects">
         <h2 class="projects-title">Projects</h2>
         <div class="project-grid">
+
+             <div class="project-card">
+                <div class="project-info">
+                    <h3>uTubeGist</h3>
+                    <p>LangGraph-based AI agent </p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description1')">View Description</a>
+                    <p id="description1" class="project-description">uTube-Gist is an intelligent YouTube summarization agent built using LangGraph, designed to parse and summarize long-form video content using LLMs. The system extracts transcripts from YouTube videos, segments them into context-preserving chunks, and invokes different agent pathways to generate either a concise summary, a timeline breakdown with timestamps, or answers to user questions. By combining LLM reasoning with stateful decision control via LangGraph, the project demonstrates my skills in agentic AI workflows, prompt design, and orchestrating multimodal tasks end-to-end. This system showcases how generative AI can be made context-aware and interactive, aligning well with applications in intelligent media processing, edge summarization, and language-based user interfaces.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>KernelCraft</h3>
+                    <p>GPU kernel visualizer and profiler </p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description2')">View Description</a>
+                    <p id="description2" class="project-description">KernelCraft is a GPU kernel profiling application I developed using Triton to implement and benchmark key transformer operations like matrix multiplication, softmax, and GELU. The goal was to build a modular system that could help visualize performance trade-offs across different kernel variants in a controlled and interpretable way. By focusing on low-level GPU execution, I was able to explore optimization strategies that affect latency and throughput—insights that are directly applicable to efficient model inference in real-world systems. This project reflects my ability to bridge the gap between deep learning and hardware, an area of growing importance in embedded AI and chip-level acceleration.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-info">
+                    <h3>Triton based Softmax Kernel</h3>
+                    <p>GPU kernel Benchmark against PyTorch</p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description3')">View Description</a>
+                    <p id="description3" class="project-description">Triton vs. PyTorch: Softmax Kernel Benchmarking is a focused project where I re-implemented the softmax operation using Triton, aiming to evaluate its performance against PyTorch's native implementation. This involved writing a low-level, fused softmax kernel from scratch, ensuring numerical stability and parallel efficiency. I then set up a rigorous benchmarking environment to profile both implementations under varying batch sizes and sequence lengths, mimicking real transformer inference conditions. The project not only highlights my ability to optimize custom GPU kernels but also demonstrates an understanding of memory access patterns, thread-level parallelism, and the trade-offs in handcrafted versus framework-optimized operations. Through this, I gained valuable insights into performance bottlenecks in transformer pipelines and showed how Triton can be leveraged for precision-targeted acceleration in deep learning workloads.</p>
+                </div>
+            </div>
+
             <div class="project-card">
                 <div class="project-info">
                     <h3>Polyglot Neural Machine Translator</h3>
                     <p>Seq2Seq Machine Translation for multi-languages</p>
-                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description1')">View Description</a>
-                    <p id="description1" class="project-description">Engineered an advanced multilingual machine translation system by fine-tuning leading models like MBart, NLLB, and MarianMT, and constructing a custom transformer model from the ground up in PyTorch. Orchestrated a one-to-many Seq2Seq architecture, optimizing each model for high-fidelity translations between English, Spanish, Dutch, and German. Deployed the solution through a seamless web interface built with Streamlit, empowering real-time, accessible multilingual translations for a diverse user base.</p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description4')">View Description</a>
+                    <p id="description4" class="project-description">Engineered an advanced multilingual machine translation system by fine-tuning leading models like MBart, NLLB, and MarianMT, and constructing a custom transformer model from the ground up in PyTorch. Orchestrated a one-to-many Seq2Seq architecture, optimizing each model for high-fidelity translations between English, Spanish, Dutch, and German. Deployed the solution through a seamless web interface built with Streamlit, empowering real-time, accessible multilingual translations for a diverse user base.</p>
                 </div>
             </div>
 
@@ -131,17 +159,8 @@
                 <div class="project-info">
                     <h3>IntelliBot: A Conversational AI Chatbot Powered by NLP</h3>
                     <p>Data collection and RAG implementation for retrieving data</p>
-                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description2')">View Description</a>
-                    <p id="description2" class="project-description">Engineered an advanced information retrieval chatbot framework with 85% topic routing accuracy using zero-shot classification and 92% retrieval precision through a RAG pipeline enhanced with Bi and Cross-encoders. Fine-tuned DialoGPT on 50,000 Wikipedia articles to tailor responses for diverse queries and deployed the system on Google Cloud Platform for scalable, real-time interaction. Integrated a Flask-based analytics dashboard to monitor performance metrics, enabling continuous optimization and ensuring high-quality user experiences.</p>
-                </div>
-            </div>
-
-            <div class="project-card">
-                <div class="project-info">
-                    <h3>Integrated Image and Graph Classification Analysis</h3>
-                    <p>Report on performance of algorithms</p>
-                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description3')">View Description</a>
-                    <p id="description3" class="project-description">Analyzed image classification on FashionMNIST using LSTM, GRU, and CNN to evaluate sequential and spatial learning. Additionally, explored node classification on Cora and Cornell datasets with GCN, investigating model performance under homophilic and heterophilic graph behaviors. This project combined insights from image and graph-based data to understand different learning paradigms.</p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description5')">View Description</a>
+                    <p id="description5" class="project-description">Engineered an advanced information retrieval chatbot framework with 85% topic routing accuracy using zero-shot classification and 92% retrieval precision through a RAG pipeline enhanced with Bi and Cross-encoders. Fine-tuned DialoGPT on 50,000 Wikipedia articles to tailor responses for diverse queries and deployed the system on Google Cloud Platform for scalable, real-time interaction. Integrated a Flask-based analytics dashboard to monitor performance metrics, enabling continuous optimization and ensuring high-quality user experiences.</p>
                 </div>
             </div>
             
@@ -149,8 +168,8 @@
                 <div class="project-info">
                     <h3>Co-operative MARL Environment Experiment</h3>
                     <p>Multi-Agent system Analysis in Reinforcement Learning</p>
-                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description4')">View Description</a>
-                    <p id="description4" class="project-description">Designed and implemented a dynamic 9x9 multi-agent grid-world environment, conducting comprehensive experiments with Decentralized Q-learning, MADDPG, REINFORCE, Centralized Q-learning, and MADDQN algorithms. Optimized each approach to significantly enhance agent performance, driving agents to efficiently navigate and achieve the goal state, and advancing the effectiveness of multi-agent collaboration and strategic goal attainment.</p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description6')">View Description</a>
+                    <p id="description6" class="project-description">Designed and implemented a dynamic 9x9 multi-agent grid-world environment, conducting comprehensive experiments with Decentralized Q-learning, MADDPG, REINFORCE, Centralized Q-learning, and MADDQN algorithms. Optimized each approach to significantly enhance agent performance, driving agents to efficiently navigate and achieve the goal state, and advancing the effectiveness of multi-agent collaboration and strategic goal attainment.</p>
                 </div>
             </div>
             
@@ -158,8 +177,8 @@
                 <div class="project-info">
                     <h3>AI-Powered Song Writing and Composing Assistant</h3>
                     <p>Music Composing Assistant using Gen AI</p>
-                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description5')">View Description</a>
-                    <p id="description5" class="project-description">Crafted an intelligent AI music generator through an advanced pipeline, employing GPT-2 to produce compelling lyrics, DistilBERT for accurate genre classification, and LSTM networks to generate expressive chord progressions. Curated and refined a comprehensive dataset for optimal training, and launched the application using Streamlit, elevating the accessibility and creativity of music composition for users.</p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description7')">View Description</a>
+                    <p id="description7" class="project-description">Crafted an intelligent AI music generator through an advanced pipeline, employing GPT-2 to produce compelling lyrics, DistilBERT for accurate genre classification, and LSTM networks to generate expressive chord progressions. Curated and refined a comprehensive dataset for optimal training, and launched the application using Streamlit, elevating the accessibility and creativity of music composition for users.</p>
                 </div>
             </div>
             
@@ -167,8 +186,8 @@
                 <div class="project-info">
                     <h3>Analysis of Gym Environments in Reinforcement Learning</h3>
                     <p>Experiments on Deep Reinforcement Learning algorithms</p>
-                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description6')">View Description</a>
-                    <p id="description6" class="project-description">Applied a range of reinforcement learning techniques, including Temporal Difference (TD), Policy Optimization (PO), and Deep RL, to Gymnasium environments, enhancing game performance through targeted hyperparameter tuning. Refined models to maximize efficiency and effectiveness, achieving optimized gameplay and improved model robustness across diverse tasks.</p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description8')">View Description</a>
+                    <p id="description8" class="project-description">Applied a range of reinforcement learning techniques, including Temporal Difference (TD), Policy Optimization (PO), and Deep RL, to Gymnasium environments, enhancing game performance through targeted hyperparameter tuning. Refined models to maximize efficiency and effectiveness, achieving optimized gameplay and improved model robustness across diverse tasks.</p>
                 </div>
             </div>
 
@@ -176,8 +195,8 @@
                 <div class="project-info">
                     <h3>Stock Price Recommender System</h3>
                     <p>End-to-End analyser agent</p>
-                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description7')">View Description</a>
-                    <p id="description7" class="project-description">Constructed a Python-driven stock investment recommender system, delivering personalized recommendations that boosted revenue by 15% through strategic investment insights. Developed the model using XGBoost, SVM, and HuggingFace transformers, with PCA applied for dimensionality reduction to refine data representation. Focused on model optimization and advanced data modeling to enhance the precision of investment strategies. Deployed a user-friendly platform with integrated real-time news feeds (via API) using Streamlit, ensuring users have access to timely, relevant market information.</p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description9')">View Description</a>
+                    <p id="description9" class="project-description">Constructed a Python-driven stock investment recommender system, delivering personalized recommendations that boosted revenue by 15% through strategic investment insights. Developed the model using XGBoost, SVM, and HuggingFace transformers, with PCA applied for dimensionality reduction to refine data representation. Focused on model optimization and advanced data modeling to enhance the precision of investment strategies. Deployed a user-friendly platform with integrated real-time news feeds (via API) using Streamlit, ensuring users have access to timely, relevant market information.</p>
                 </div>
             </div>
 
@@ -185,8 +204,8 @@
                 <div class="project-info">
                     <h3>Fake News Detection System</h3>
                     <p>Mini-project to analyze fake comments for Kaggle competition</p>
-                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description8')">View Description</a>
-                    <p id="description8" class="project-description">Developed an advanced fake news detection system utilizing XLNet, Naive Bayes, and HuggingFace models, rigorously evaluated with the Matthews Correlation Coefficient for robust performance metrics. This system actively mitigates misinformation on social media by identifying unreliable content, contributing to a safer and more informed online environment.</p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description10')">View Description</a>
+                    <p id="description10" class="project-description">Developed an advanced fake news detection system utilizing XLNet, Naive Bayes, and HuggingFace models, rigorously evaluated with the Matthews Correlation Coefficient for robust performance metrics. This system actively mitigates misinformation on social media by identifying unreliable content, contributing to a safer and more informed online environment.</p>
                 </div>
             </div>
 
@@ -194,8 +213,8 @@
                 <div class="project-info">
                     <h3>Sewing Machine Data Logger</h3>
                     <p>IoT information system for industries</p>
-                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description9')">View Description</a>
-                    <p id="description9" class="project-description">Automated OEE (Overall Equipment Effectiveness) data system for the clothing industry using IoT, achieving 90% process transparency and boosting production capacity by 30% across four manufacturing plants. Deployed an interactive dashboard that leverages IoT sensors and controllers to monitor garment flow, machine runtime, and operational status. Enabled seamless data transmission across machines, providing real-time insights on production metrics like piece counts and machine health, ultimately enhancing operational visibility and decision-making.</p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description11')">View Description</a>
+                    <p id="description11" class="project-description">Automated OEE (Overall Equipment Effectiveness) data system for the clothing industry using IoT, achieving 90% process transparency and boosting production capacity by 30% across four manufacturing plants. Deployed an interactive dashboard that leverages IoT sensors and controllers to monitor garment flow, machine runtime, and operational status. Enabled seamless data transmission across machines, providing real-time insights on production metrics like piece counts and machine health, ultimately enhancing operational visibility and decision-making.</p>
                 </div>
             </div>
 
@@ -203,8 +222,8 @@
                 <div class="project-info">
                     <h3>Efficient Charging circuit for an E-bike</h3>
                     <p>Capstone project in Electronics for E-bike</p>
-                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description10')">View Description</a>
-                    <p id="description10" class="project-description">Engineered a high-efficiency charging circuit capable of delivering 144W to an electric bike while charging, tailored specifically for a 48V, 20A battery. This circuit ensures reliable power delivery and optimal charging performance, supporting sustained power needs and extending battery life for enhanced operational efficiency.</p>
+                    <a href="#" class="project-link" onclick="toggleDescription(event, 'description12')">View Description</a>
+                    <p id="description12" class="project-description">Engineered a high-efficiency charging circuit capable of delivering 144W to an electric bike while charging, tailored specifically for a 48V, 20A battery. This circuit ensures reliable power delivery and optimal charging performance, supporting sustained power needs and extending battery life for enhanced operational efficiency.</p>
                 </div>
             </div>
 
