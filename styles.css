@@ -91,18 +91,19 @@ html {
 }
 
 .view-resume {
-    padding: 10px 20px;
-    background-color: linear-gradient(90deg, #ff58a6, #6c63ff);
+    background: linear-gradient(90deg, #ff58a6, #6c63ff);
     color: #fff;
     border: none;
-    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 30px;
     cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .view-resume:hover {
-    background-color:rgba(108, 99, 255, 0.3);
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(108, 99, 255, 0.3);
 }
 
 
